@@ -12,6 +12,11 @@ target 'GuoMeiApp' do
  pod 'AFNetworking', '~> 3.2.0'
  pod 'IQKeyboardManager', '~> 6.0.2'
  pod 'MJExtension', '~> 3.0.13'
+ pod 'SDWebImage', '~> 4.3.3'
+ pod 'MJRefresh', '~> 3.1.15.3'
+ pod 'SDCycleScrollView', '~> 1.75'
+
+
    target 'GuoMeiAppTests' do
     inherit! :search_paths
     # Pods for testing

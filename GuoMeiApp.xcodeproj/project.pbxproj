@@ -31,6 +31,38 @@
 		9CA2E5BF20E8A8B700AE25C7 /* ZYFHandPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5BE20E8A8B700AE25C7 /* ZYFHandPickViewController.m */; };
 		9CA2E5CA20E8AA0C00AE25C7 /* ZYFMyCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5C920E8AA0C00AE25C7 /* ZYFMyCenterViewController.m */; };
 		9CA2E5CD20E8B00B00AE25C7 /* DCObjManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5CC20E8B00A00AE25C7 /* DCObjManager.m */; };
+		9CA2E5F220E8C8F400AE25C7 /* ZYFGridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5F120E8C8F400AE25C7 /* ZYFGridItem.m */; };
+		9CA2E5FA20E8CAFC00AE25C7 /* ZYFGoodsGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5F920E8CAFC00AE25C7 /* ZYFGoodsGridCell.m */; };
+		9CA2E5FD20E8D36300AE25C7 /* UIColor+ZYFColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5FC20E8D36300AE25C7 /* UIColor+ZYFColorChange.m */; };
+		9CA2E60020E8DE9000AE25C7 /* ZYFSlideshowHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5FF20E8DE9000AE25C7 /* ZYFSlideshowHeadView.m */; };
+		9CA2E62420E8E49A00AE25C7 /* shareTerrace.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E60320E8E49800AE25C7 /* shareTerrace.plist */; };
+		9CA2E62520E8E49A00AE25C7 /* ClassifyTitles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E60420E8E49800AE25C7 /* ClassifyTitles.plist */; };
+		9CA2E62620E8E49A00AE25C7 /* DetailRecommend.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E60520E8E49800AE25C7 /* DetailRecommend.plist */; };
+		9CA2E62720E8E49A00AE25C7 /* ClassiftyGoods03.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E60620E8E49800AE25C7 /* ClassiftyGoods03.plist */; };
+		9CA2E62820E8E49A00AE25C7 /* ClasiftyGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E60720E8E49800AE25C7 /* ClasiftyGoods.plist */; };
+		9CA2E62920E8E49A00AE25C7 /* ClassiftyGoods01.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E60820E8E49800AE25C7 /* ClassiftyGoods01.plist */; };
+		9CA2E62A20E8E49A00AE25C7 /* ClassiftyGoods02.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E60920E8E49800AE25C7 /* ClassiftyGoods02.plist */; };
+		9CA2E62B20E8E49A00AE25C7 /* FootprintGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E60A20E8E49800AE25C7 /* FootprintGoods.plist */; };
+		9CA2E62C20E8E49A00AE25C7 /* ShopItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E60B20E8E49800AE25C7 /* ShopItem.plist */; };
+		9CA2E62D20E8E49A00AE25C7 /* FiltrateItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E60C20E8E49800AE25C7 /* FiltrateItem.plist */; };
+		9CA2E62E20E8E49A00AE25C7 /* BeautyShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E60E20E8E49800AE25C7 /* BeautyShop.plist */; };
+		9CA2E62F20E8E49A00AE25C7 /* BeautyRecommendShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E60F20E8E49800AE25C7 /* BeautyRecommendShop.plist */; };
+		9CA2E63020E8E49A00AE25C7 /* YouLikeGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E61120E8E49800AE25C7 /* YouLikeGoods.plist */; };
+		9CA2E63120E8E49A00AE25C7 /* CommentPic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E61220E8E49800AE25C7 /* CommentPic.plist */; };
+		9CA2E63220E8E49A00AE25C7 /* MyCenterFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E61320E8E49800AE25C7 /* MyCenterFlow.plist */; };
+		9CA2E63320E8E49A00AE25C7 /* CommentData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E61420E8E49800AE25C7 /* CommentData.plist */; };
+		9CA2E63420E8E49A00AE25C7 /* CommentBadData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E61520E8E49800AE25C7 /* CommentBadData.plist */; };
+		9CA2E63520E8E49A00AE25C7 /* DeliveryAdress.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E61620E8E49800AE25C7 /* DeliveryAdress.plist */; };
+		9CA2E63620E8E49A00AE25C7 /* MessageNote.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E61720E8E49800AE25C7 /* MessageNote.plist */; };
+		9CA2E63720E8E49A00AE25C7 /* MyServiceFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E61820E8E49800AE25C7 /* MyServiceFlow.plist */; };
+		9CA2E63820E8E49A00AE25C7 /* GoodsGrid.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E61A20E8E49800AE25C7 /* GoodsGrid.plist */; };
+		9CA2E63920E8E49A00AE25C7 /* HomeHighGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E61B20E8E49800AE25C7 /* HomeHighGoods.plist */; };
+		9CA2E63A20E8E49A00AE25C7 /* CountDownShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E61C20E8E49800AE25C7 /* CountDownShop.plist */; };
+		9CA2E63B20E8E49A00AE25C7 /* RecommendShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E61E20E8E49800AE25C7 /* RecommendShop.plist */; };
+		9CA2E63C20E8E49A00AE25C7 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E62020E8E49A00AE25C7 /* loading.gif */; };
+		9CA2E63D20E8E49A00AE25C7 /* loading2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E62120E8E49A00AE25C7 /* loading2.gif */; };
+		9CA2E63E20E8E49A00AE25C7 /* T1cdxgB5_T1RCvBVdK.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E62220E8E49A00AE25C7 /* T1cdxgB5_T1RCvBVdK.gif */; };
+		9CA2E63F20E8E49A00AE25C7 /* moveupAndDown@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E62320E8E49A00AE25C7 /* moveupAndDown@2x.gif */; };
 		9CEF706E20E38EB4002192BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF706C20E38EB4002192BA /* Main.storyboard */; };
 		9CEF707020E38EB5002192BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF706F20E38EB5002192BA /* Assets.xcassets */; };
 		9CEF707320E38EB5002192BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF707120E38EB5002192BA /* LaunchScreen.storyboard */; };
@@ -108,6 +140,42 @@
 		9CA2E5C920E8AA0C00AE25C7 /* ZYFMyCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFMyCenterViewController.m; sourceTree = "<group>"; };
 		9CA2E5CB20E8B00900AE25C7 /* DCObjManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCObjManager.h; sourceTree = "<group>"; };
 		9CA2E5CC20E8B00A00AE25C7 /* DCObjManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCObjManager.m; sourceTree = "<group>"; };
+		9CA2E5F020E8C8F400AE25C7 /* ZYFGridItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFGridItem.h; sourceTree = "<group>"; };
+		9CA2E5F120E8C8F400AE25C7 /* ZYFGridItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFGridItem.m; sourceTree = "<group>"; };
+		9CA2E5F820E8CAFC00AE25C7 /* ZYFGoodsGridCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFGoodsGridCell.h; sourceTree = "<group>"; };
+		9CA2E5F920E8CAFC00AE25C7 /* ZYFGoodsGridCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFGoodsGridCell.m; sourceTree = "<group>"; };
+		9CA2E5FB20E8D36300AE25C7 /* UIColor+ZYFColorChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZYFColorChange.h"; sourceTree = "<group>"; };
+		9CA2E5FC20E8D36300AE25C7 /* UIColor+ZYFColorChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZYFColorChange.m"; sourceTree = "<group>"; };
+		9CA2E5FE20E8DE9000AE25C7 /* ZYFSlideshowHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFSlideshowHeadView.h; sourceTree = "<group>"; };
+		9CA2E5FF20E8DE9000AE25C7 /* ZYFSlideshowHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFSlideshowHeadView.m; sourceTree = "<group>"; };
+		9CA2E60320E8E49800AE25C7 /* shareTerrace.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shareTerrace.plist; sourceTree = "<group>"; };
+		9CA2E60420E8E49800AE25C7 /* ClassifyTitles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClassifyTitles.plist; sourceTree = "<group>"; };
+		9CA2E60520E8E49800AE25C7 /* DetailRecommend.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DetailRecommend.plist; sourceTree = "<group>"; };
+		9CA2E60620E8E49800AE25C7 /* ClassiftyGoods03.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClassiftyGoods03.plist; sourceTree = "<group>"; };
+		9CA2E60720E8E49800AE25C7 /* ClasiftyGoods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClasiftyGoods.plist; sourceTree = "<group>"; };
+		9CA2E60820E8E49800AE25C7 /* ClassiftyGoods01.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClassiftyGoods01.plist; sourceTree = "<group>"; };
+		9CA2E60920E8E49800AE25C7 /* ClassiftyGoods02.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClassiftyGoods02.plist; sourceTree = "<group>"; };
+		9CA2E60A20E8E49800AE25C7 /* FootprintGoods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FootprintGoods.plist; sourceTree = "<group>"; };
+		9CA2E60B20E8E49800AE25C7 /* ShopItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShopItem.plist; sourceTree = "<group>"; };
+		9CA2E60C20E8E49800AE25C7 /* FiltrateItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FiltrateItem.plist; sourceTree = "<group>"; };
+		9CA2E60E20E8E49800AE25C7 /* BeautyShop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BeautyShop.plist; sourceTree = "<group>"; };
+		9CA2E60F20E8E49800AE25C7 /* BeautyRecommendShop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BeautyRecommendShop.plist; sourceTree = "<group>"; };
+		9CA2E61120E8E49800AE25C7 /* YouLikeGoods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouLikeGoods.plist; sourceTree = "<group>"; };
+		9CA2E61220E8E49800AE25C7 /* CommentPic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CommentPic.plist; sourceTree = "<group>"; };
+		9CA2E61320E8E49800AE25C7 /* MyCenterFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyCenterFlow.plist; sourceTree = "<group>"; };
+		9CA2E61420E8E49800AE25C7 /* CommentData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CommentData.plist; sourceTree = "<group>"; };
+		9CA2E61520E8E49800AE25C7 /* CommentBadData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CommentBadData.plist; sourceTree = "<group>"; };
+		9CA2E61620E8E49800AE25C7 /* DeliveryAdress.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeliveryAdress.plist; sourceTree = "<group>"; };
+		9CA2E61720E8E49800AE25C7 /* MessageNote.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MessageNote.plist; sourceTree = "<group>"; };
+		9CA2E61820E8E49800AE25C7 /* MyServiceFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyServiceFlow.plist; sourceTree = "<group>"; };
+		9CA2E61A20E8E49800AE25C7 /* GoodsGrid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GoodsGrid.plist; sourceTree = "<group>"; };
+		9CA2E61B20E8E49800AE25C7 /* HomeHighGoods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomeHighGoods.plist; sourceTree = "<group>"; };
+		9CA2E61C20E8E49800AE25C7 /* CountDownShop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountDownShop.plist; sourceTree = "<group>"; };
+		9CA2E61E20E8E49800AE25C7 /* RecommendShop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RecommendShop.plist; sourceTree = "<group>"; };
+		9CA2E62020E8E49A00AE25C7 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		9CA2E62120E8E49A00AE25C7 /* loading2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading2.gif; sourceTree = "<group>"; };
+		9CA2E62220E8E49A00AE25C7 /* T1cdxgB5_T1RCvBVdK.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = T1cdxgB5_T1RCvBVdK.gif; sourceTree = "<group>"; };
+		9CA2E62320E8E49A00AE25C7 /* moveupAndDown@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "moveupAndDown@2x.gif"; sourceTree = "<group>"; };
 		9CEF706320E38EB4002192BA /* GuoMeiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuoMeiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEF706D20E38EB4002192BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CEF706F20E38EB5002192BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -249,6 +317,8 @@
 				9CA2E57A20E7EDF100AE25C7 /* UIView+DCExtension.m */,
 				9CA2E57620E7EDE500AE25C7 /* UIBarButtonItem+DCBarButtonItem.h */,
 				9CA2E57720E7EDE500AE25C7 /* UIBarButtonItem+DCBarButtonItem.m */,
+				9CA2E5FB20E8D36300AE25C7 /* UIColor+ZYFColorChange.h */,
+				9CA2E5FC20E8D36300AE25C7 /* UIColor+ZYFColorChange.m */,
 			);
 			path = "Category(分类)";
 			sourceTree = "<group>";
@@ -309,6 +379,8 @@
 		9CA2E57E20E7EFB000AE25C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9CA2E5F020E8C8F400AE25C7 /* ZYFGridItem.h */,
+				9CA2E5F120E8C8F400AE25C7 /* ZYFGridItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -316,6 +388,8 @@
 		9CA2E57F20E7EFC100AE25C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9CA2E5F420E8CA9C00AE25C7 /* CollectionView */,
+				9CA2E5F320E8CA9100AE25C7 /* CusSortLayout */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -601,6 +675,130 @@
 			path = SubController;
 			sourceTree = "<group>";
 		};
+		9CA2E5F320E8CA9100AE25C7 /* CusSortLayout */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CusSortLayout;
+			sourceTree = "<group>";
+		};
+		9CA2E5F420E8CA9C00AE25C7 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5F720E8CAB500AE25C7 /* Header */,
+				9CA2E5F620E8CAAF00AE25C7 /* Footer */,
+				9CA2E5F520E8CAA800AE25C7 /* Cell */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		9CA2E5F520E8CAA800AE25C7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5F820E8CAFC00AE25C7 /* ZYFGoodsGridCell.h */,
+				9CA2E5F920E8CAFC00AE25C7 /* ZYFGoodsGridCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9CA2E5F620E8CAAF00AE25C7 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		9CA2E5F720E8CAB500AE25C7 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5FE20E8DE9000AE25C7 /* ZYFSlideshowHeadView.h */,
+				9CA2E5FF20E8DE9000AE25C7 /* ZYFSlideshowHeadView.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		9CA2E60120E8E49800AE25C7 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E60220E8E49800AE25C7 /* 分类Plist */,
+				9CA2E60D20E8E49800AE25C7 /* 美店 */,
+				9CA2E61020E8E49800AE25C7 /* 我的Plist */,
+				9CA2E61920E8E49800AE25C7 /* 首页Plist */,
+				9CA2E61D20E8E49800AE25C7 /* 购物车Plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		9CA2E60220E8E49800AE25C7 /* 分类Plist */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E60320E8E49800AE25C7 /* shareTerrace.plist */,
+				9CA2E60420E8E49800AE25C7 /* ClassifyTitles.plist */,
+				9CA2E60520E8E49800AE25C7 /* DetailRecommend.plist */,
+				9CA2E60620E8E49800AE25C7 /* ClassiftyGoods03.plist */,
+				9CA2E60720E8E49800AE25C7 /* ClasiftyGoods.plist */,
+				9CA2E60820E8E49800AE25C7 /* ClassiftyGoods01.plist */,
+				9CA2E60920E8E49800AE25C7 /* ClassiftyGoods02.plist */,
+				9CA2E60A20E8E49800AE25C7 /* FootprintGoods.plist */,
+				9CA2E60B20E8E49800AE25C7 /* ShopItem.plist */,
+				9CA2E60C20E8E49800AE25C7 /* FiltrateItem.plist */,
+			);
+			path = "分类Plist";
+			sourceTree = "<group>";
+		};
+		9CA2E60D20E8E49800AE25C7 /* 美店 */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E60E20E8E49800AE25C7 /* BeautyShop.plist */,
+				9CA2E60F20E8E49800AE25C7 /* BeautyRecommendShop.plist */,
+			);
+			path = "美店";
+			sourceTree = "<group>";
+		};
+		9CA2E61020E8E49800AE25C7 /* 我的Plist */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E61120E8E49800AE25C7 /* YouLikeGoods.plist */,
+				9CA2E61220E8E49800AE25C7 /* CommentPic.plist */,
+				9CA2E61320E8E49800AE25C7 /* MyCenterFlow.plist */,
+				9CA2E61420E8E49800AE25C7 /* CommentData.plist */,
+				9CA2E61520E8E49800AE25C7 /* CommentBadData.plist */,
+				9CA2E61620E8E49800AE25C7 /* DeliveryAdress.plist */,
+				9CA2E61720E8E49800AE25C7 /* MessageNote.plist */,
+				9CA2E61820E8E49800AE25C7 /* MyServiceFlow.plist */,
+			);
+			path = "我的Plist";
+			sourceTree = "<group>";
+		};
+		9CA2E61920E8E49800AE25C7 /* 首页Plist */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E61A20E8E49800AE25C7 /* GoodsGrid.plist */,
+				9CA2E61B20E8E49800AE25C7 /* HomeHighGoods.plist */,
+				9CA2E61C20E8E49800AE25C7 /* CountDownShop.plist */,
+			);
+			path = "首页Plist";
+			sourceTree = "<group>";
+		};
+		9CA2E61D20E8E49800AE25C7 /* 购物车Plist */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E61E20E8E49800AE25C7 /* RecommendShop.plist */,
+			);
+			path = "购物车Plist";
+			sourceTree = "<group>";
+		};
+		9CA2E61F20E8E49A00AE25C7 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E62020E8E49A00AE25C7 /* loading.gif */,
+				9CA2E62120E8E49A00AE25C7 /* loading2.gif */,
+				9CA2E62220E8E49A00AE25C7 /* T1cdxgB5_T1RCvBVdK.gif */,
+				9CA2E62320E8E49A00AE25C7 /* moveupAndDown@2x.gif */,
+			);
+			path = GIF;
+			sourceTree = "<group>";
+		};
 		9CEF705A20E38EB4002192BA = {
 			isa = PBXGroup;
 			children = (
@@ -792,6 +990,8 @@
 		9CEF70A520E38F94002192BA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9CA2E61F20E8E49A00AE25C7 /* GIF */,
+				9CA2E60120E8E49800AE25C7 /* Plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -928,10 +1128,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA2E63420E8E49A00AE25C7 /* CommentBadData.plist in Resources */,
 				9CA2E59620E7F2C300AE25C7 /* ZYFLoginViewController.xib in Resources */,
+				9CA2E63920E8E49A00AE25C7 /* HomeHighGoods.plist in Resources */,
+				9CA2E63A20E8E49A00AE25C7 /* CountDownShop.plist in Resources */,
+				9CA2E62F20E8E49A00AE25C7 /* BeautyRecommendShop.plist in Resources */,
+				9CA2E63B20E8E49A00AE25C7 /* RecommendShop.plist in Resources */,
+				9CA2E62A20E8E49A00AE25C7 /* ClassiftyGoods02.plist in Resources */,
+				9CA2E63720E8E49A00AE25C7 /* MyServiceFlow.plist in Resources */,
+				9CA2E62820E8E49A00AE25C7 /* ClasiftyGoods.plist in Resources */,
+				9CA2E63F20E8E49A00AE25C7 /* moveupAndDown@2x.gif in Resources */,
+				9CA2E63320E8E49A00AE25C7 /* CommentData.plist in Resources */,
+				9CA2E62720E8E49A00AE25C7 /* ClassiftyGoods03.plist in Resources */,
+				9CA2E62920E8E49A00AE25C7 /* ClassiftyGoods01.plist in Resources */,
+				9CA2E63520E8E49A00AE25C7 /* DeliveryAdress.plist in Resources */,
+				9CA2E63620E8E49A00AE25C7 /* MessageNote.plist in Resources */,
+				9CA2E62C20E8E49A00AE25C7 /* ShopItem.plist in Resources */,
+				9CA2E63120E8E49A00AE25C7 /* CommentPic.plist in Resources */,
+				9CA2E62420E8E49A00AE25C7 /* shareTerrace.plist in Resources */,
+				9CA2E63C20E8E49A00AE25C7 /* loading.gif in Resources */,
 				9CEF707320E38EB5002192BA /* LaunchScreen.storyboard in Resources */,
+				9CA2E63020E8E49A00AE25C7 /* YouLikeGoods.plist in Resources */,
+				9CA2E63820E8E49A00AE25C7 /* GoodsGrid.plist in Resources */,
+				9CA2E62E20E8E49A00AE25C7 /* BeautyShop.plist in Resources */,
 				9CEF707020E38EB5002192BA /* Assets.xcassets in Resources */,
 				9CEF706E20E38EB4002192BA /* Main.storyboard in Resources */,
+				9CA2E62D20E8E49A00AE25C7 /* FiltrateItem.plist in Resources */,
+				9CA2E62620E8E49A00AE25C7 /* DetailRecommend.plist in Resources */,
+				9CA2E62520E8E49A00AE25C7 /* ClassifyTitles.plist in Resources */,
+				9CA2E62B20E8E49A00AE25C7 /* FootprintGoods.plist in Resources */,
+				9CA2E63D20E8E49A00AE25C7 /* loading2.gif in Resources */,
+				9CA2E63220E8E49A00AE25C7 /* MyCenterFlow.plist in Resources */,
+				9CA2E63E20E8E49A00AE25C7 /* T1cdxgB5_T1RCvBVdK.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -978,10 +1206,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GuoMeiApp/Pods-GuoMeiApp-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1040,10 +1270,13 @@
 				9CA2E5CD20E8B00B00AE25C7 /* DCObjManager.m in Sources */,
 				9CA2E4E220E77B9B00AE25C7 /* ZYFTabBarController.m in Sources */,
 				9CA2E4DB20E75C3C00AE25C7 /* DCConsts.m in Sources */,
+				9CA2E60020E8DE9000AE25C7 /* ZYFSlideshowHeadView.m in Sources */,
 				9CA2E59520E7F2C300AE25C7 /* ZYFLoginViewController.m in Sources */,
 				9CA2E59920E7F2D900AE25C7 /* ZYFRegisteredViewController.m in Sources */,
 				9CA2E5AD20E898D900AE25C7 /* ZYFGoodDetailViewController.m in Sources */,
 				9CA2E5BF20E8A8B700AE25C7 /* ZYFHandPickViewController.m in Sources */,
+				9CA2E5F220E8C8F400AE25C7 /* ZYFGridItem.m in Sources */,
+				9CA2E5FA20E8CAFC00AE25C7 /* ZYFGoodsGridCell.m in Sources */,
 				9CEF707620E38EB5002192BA /* main.m in Sources */,
 				9CA2E58C20E7F0E700AE25C7 /* ZYFBaseSetViewController.m in Sources */,
 				9CA2E4DF20E7755700AE25C7 /* ZYFAppVersionTool.m in Sources */,
@@ -1053,6 +1286,7 @@
 				9CEF70A920E38FC7002192BA /* AppDelegate.m in Sources */,
 				9CA2E5B620E8995500AE25C7 /* ZYFCommodityViewController.m in Sources */,
 				9CA2E5A820E8989500AE25C7 /* ZYFBeautyShopViewController.m in Sources */,
+				9CA2E5FD20E8D36300AE25C7 /* UIColor+ZYFColorChange.m in Sources */,
 				9CA2E4CD20E75A0800AE25C7 /* ZYFNavigationController.m in Sources */,
 				9CA2E5BC20E8A04300AE25C7 /* DCSpeedy.m in Sources */,
 			);
