@@ -10,11 +10,16 @@
 #import "ZYFGridItem.h"
 #import "ZYFGoodsGridCell.h"
 #import "ZYFSlideshowHeadView.h"
+#import "ZYFHomeTopToolView.h"
 @interface ZYFHandPickViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 /** collectionView **/
 @property (nonatomic, strong) UICollectionView *collectionView;
 /** 10个属性 **/
 @property (nonatomic, strong) NSMutableArray<ZYFGridItem *> *gridItem;
+/** 顶部工具栏 **/
+@property (nonatomic, strong) ZYFHomeTopToolView *topToolView;
+/** 滚回顶部按钮 **/
+@property (nonatomic, strong) UIButton *backTopButton;
 @end
 
 @implementation ZYFHandPickViewController
@@ -49,8 +54,11 @@ static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
     
     [self setUpBase];
     
+    [self setUpNavTopView];
     
     [self setUpGoodsData];
+    
+    [self setUpScrollToTopView];
     
 }
 #pragma mark ---- init ----
@@ -65,6 +73,46 @@ static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
 {
     _gridItem = [ZYFGridItem mj_objectArrayWithFilename:@"GoodsGrid.plist"];
     //_youLikeItem = [DCRecommendItem mj_objectArrayWithFilename:@"HomeHighGoods.plist"];
+}
+#pragma mark ---- 导航栏处理 ----
+- (void)setUpNavTopView
+{
+    _topToolView = [[ZYFHomeTopToolView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, 64)];
+    WEAKSELF
+    _topToolView.leftItemClickBlock = ^{
+        NSLog(@"点击了首页扫一扫");
+//        DCGMScanViewController *dcGMvC = [DCGMScanViewController new];
+//        [weakSelf.navigationController pushViewController:dcGMvC animated:YES];
+    };
+    _topToolView.rightItemClickBlock = ^{
+        NSLog(@"点击了首页分类");
+//        DCCommodityViewController *dcComVc = [DCCommodityViewController new];
+//        [weakSelf.navigationController pushViewController:dcComVc animated:YES];
+    };
+    _topToolView.rightRItemClickBlock = ^{
+        NSLog(@"点击了首页购物车");
+//        DCMyTrolleyViewController *shopCarVc = [DCMyTrolleyViewController new];
+//        shopCarVc.isTabBar = YES;
+//        shopCarVc.title = @"购物车";
+//        [weakSelf.navigationController pushViewController:shopCarVc animated:YES];
+    };
+    _topToolView.searchButtonClickBlock = ^{
+        NSLog(@"点击了首页搜索");
+    };
+    _topToolView.voiceButtonClickBlock = ^{
+        NSLog(@"点击了首页语音");
+    };
+    [self.view addSubview:_topToolView];
+}
+#pragma mark - 滚回顶部
+- (void)setUpScrollToTopView
+{
+    _backTopButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:_backTopButton];
+    [_backTopButton addTarget:self action:@selector(ScrollToTop) forControlEvents:UIControlEventTouchUpInside];
+    [_backTopButton setImage:[UIImage imageNamed:@"btn_UpToTop"] forState:UIControlStateNormal];
+    _backTopButton.hidden = YES;
+    _backTopButton.frame = CGRectMake(ScreenW - 50, ScreenH - 110, 40, 40);
 }
 #pragma mark ---- UICollectionViewDataSource ----
 
@@ -138,9 +186,26 @@ static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
     return (section == 5) ? 4 : 0;
 }
 
-
-
-
+#pragma mark - <UIScrollViewDelegate>
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    
+    _backTopButton.hidden = (scrollView.contentOffset.y > ScreenH) ? NO : YES;//判断回到顶部按钮是否隐藏
+    _topToolView.hidden = (scrollView.contentOffset.y < 0) ? YES : NO;//判断顶部工具View的显示和隐形
+    
+    if (scrollView.contentOffset.y > DCNaviH) {
+        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+        [[NSNotificationCenter defaultCenter]postNotificationName:SHOWTOPTOOLVIEW object:nil];
+    }else{
+        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+        [[NSNotificationCenter defaultCenter]postNotificationName:HIDETOPTOOLVIEW object:nil];
+    }
+}
+#pragma mark - collectionView滚回顶部
+- (void)ScrollToTop
+{
+    [self.collectionView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
+}
 
 
 

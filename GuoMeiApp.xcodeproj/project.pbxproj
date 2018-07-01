@@ -63,6 +63,7 @@
 		9CA2E63D20E8E49A00AE25C7 /* loading2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E62120E8E49A00AE25C7 /* loading2.gif */; };
 		9CA2E63E20E8E49A00AE25C7 /* T1cdxgB5_T1RCvBVdK.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E62220E8E49A00AE25C7 /* T1cdxgB5_T1RCvBVdK.gif */; };
 		9CA2E63F20E8E49A00AE25C7 /* moveupAndDown@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E62320E8E49A00AE25C7 /* moveupAndDown@2x.gif */; };
+		9CA2E64220E8E75100AE25C7 /* ZYFHomeTopToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E64120E8E75100AE25C7 /* ZYFHomeTopToolView.m */; };
 		9CEF706E20E38EB4002192BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF706C20E38EB4002192BA /* Main.storyboard */; };
 		9CEF707020E38EB5002192BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF706F20E38EB5002192BA /* Assets.xcassets */; };
 		9CEF707320E38EB5002192BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF707120E38EB5002192BA /* LaunchScreen.storyboard */; };
@@ -176,6 +177,8 @@
 		9CA2E62120E8E49A00AE25C7 /* loading2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading2.gif; sourceTree = "<group>"; };
 		9CA2E62220E8E49A00AE25C7 /* T1cdxgB5_T1RCvBVdK.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = T1cdxgB5_T1RCvBVdK.gif; sourceTree = "<group>"; };
 		9CA2E62320E8E49A00AE25C7 /* moveupAndDown@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "moveupAndDown@2x.gif"; sourceTree = "<group>"; };
+		9CA2E64020E8E75100AE25C7 /* ZYFHomeTopToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFHomeTopToolView.h; sourceTree = "<group>"; };
+		9CA2E64120E8E75100AE25C7 /* ZYFHomeTopToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFHomeTopToolView.m; sourceTree = "<group>"; };
 		9CEF706320E38EB4002192BA /* GuoMeiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuoMeiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEF706D20E38EB4002192BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CEF706F20E38EB5002192BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -390,6 +393,8 @@
 			children = (
 				9CA2E5F420E8CA9C00AE25C7 /* CollectionView */,
 				9CA2E5F320E8CA9100AE25C7 /* CusSortLayout */,
+				9CA2E64020E8E75100AE25C7 /* ZYFHomeTopToolView.h */,
+				9CA2E64120E8E75100AE25C7 /* ZYFHomeTopToolView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1261,6 +1266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA2E64220E8E75100AE25C7 /* ZYFHomeTopToolView.m in Sources */,
 				9CA2E57820E7EDE600AE25C7 /* UIBarButtonItem+DCBarButtonItem.m in Sources */,
 				9CA2E55320E7E49500AE25C7 /* ZYFFeatureCell.m in Sources */,
 				9CA2E5B920E89CE500AE25C7 /* ZYFTabBadgeView.m in Sources */,

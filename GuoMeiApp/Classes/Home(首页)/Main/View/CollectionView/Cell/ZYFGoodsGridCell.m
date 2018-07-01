@@ -59,7 +59,7 @@
         }
         make.centerX.mas_equalTo(self);
     }];
-    
+    /** 不用定义宽高,按照字体进行自适应 **/
     [_gridLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self);
         make.top.mas_equalTo(self->_gridImageView.mas_bottom).offset(5);
