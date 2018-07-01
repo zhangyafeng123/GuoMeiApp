@@ -1,20 +1,50 @@
 PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
   - CDDPagerController (1.1.4)
   - GQGesVCTransition (0.0.5)
+  - IQKeyboardManager (6.0.2)
+  - Masonry (1.1.0)
+  - MJExtension (3.0.13)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.2.0)
   - CDDPagerController (~> 1.1.4)
   - GQGesVCTransition (~> 0.0.5)
+  - IQKeyboardManager (~> 6.0.2)
+  - Masonry (~> 1.1.0)
+  - MJExtension (~> 3.0.13)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
     - CDDPagerController
     - GQGesVCTransition
+    - IQKeyboardManager
+    - Masonry
+    - MJExtension
 
 SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   CDDPagerController: 252632078b543e57ca3c052bf1f25759b6c862a6
   GQGesVCTransition: e4991d52fa30bdb25da6df1b80f83ffd8c4679da
+  IQKeyboardManager: c49d59e358aeeffaa0280aa305093c2b194d2607
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
 
-PODFILE CHECKSUM: 95b8289838b70cd5b3f4474b6b8decf6163d5733
+PODFILE CHECKSUM: 9753772bf8e3c963428f8d89995ac5b0c2a48d06
 
 COCOAPODS: 1.5.0

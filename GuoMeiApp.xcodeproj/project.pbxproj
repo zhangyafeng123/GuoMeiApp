@@ -26,6 +26,11 @@
 		9CA2E5A820E8989500AE25C7 /* ZYFBeautyShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5A720E8989500AE25C7 /* ZYFBeautyShopViewController.m */; };
 		9CA2E5AD20E898D900AE25C7 /* ZYFGoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5AC20E898D900AE25C7 /* ZYFGoodDetailViewController.m */; };
 		9CA2E5B620E8995500AE25C7 /* ZYFCommodityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5B520E8995500AE25C7 /* ZYFCommodityViewController.m */; };
+		9CA2E5B920E89CE500AE25C7 /* ZYFTabBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5B820E89CE500AE25C7 /* ZYFTabBadgeView.m */; };
+		9CA2E5BC20E8A04300AE25C7 /* DCSpeedy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5BA20E8A04200AE25C7 /* DCSpeedy.m */; };
+		9CA2E5BF20E8A8B700AE25C7 /* ZYFHandPickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5BE20E8A8B700AE25C7 /* ZYFHandPickViewController.m */; };
+		9CA2E5CA20E8AA0C00AE25C7 /* ZYFMyCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5C920E8AA0C00AE25C7 /* ZYFMyCenterViewController.m */; };
+		9CA2E5CD20E8B00B00AE25C7 /* DCObjManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5CC20E8B00A00AE25C7 /* DCObjManager.m */; };
 		9CEF706E20E38EB4002192BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF706C20E38EB4002192BA /* Main.storyboard */; };
 		9CEF707020E38EB5002192BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF706F20E38EB5002192BA /* Assets.xcassets */; };
 		9CEF707320E38EB5002192BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF707120E38EB5002192BA /* LaunchScreen.storyboard */; };
@@ -93,6 +98,16 @@
 		9CA2E5AC20E898D900AE25C7 /* ZYFGoodDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFGoodDetailViewController.m; sourceTree = "<group>"; };
 		9CA2E5B420E8995500AE25C7 /* ZYFCommodityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFCommodityViewController.h; sourceTree = "<group>"; };
 		9CA2E5B520E8995500AE25C7 /* ZYFCommodityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFCommodityViewController.m; sourceTree = "<group>"; };
+		9CA2E5B720E89CE500AE25C7 /* ZYFTabBadgeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFTabBadgeView.h; sourceTree = "<group>"; };
+		9CA2E5B820E89CE500AE25C7 /* ZYFTabBadgeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFTabBadgeView.m; sourceTree = "<group>"; };
+		9CA2E5BA20E8A04200AE25C7 /* DCSpeedy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSpeedy.m; sourceTree = "<group>"; };
+		9CA2E5BB20E8A04300AE25C7 /* DCSpeedy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSpeedy.h; sourceTree = "<group>"; };
+		9CA2E5BD20E8A8B700AE25C7 /* ZYFHandPickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFHandPickViewController.h; sourceTree = "<group>"; };
+		9CA2E5BE20E8A8B700AE25C7 /* ZYFHandPickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFHandPickViewController.m; sourceTree = "<group>"; };
+		9CA2E5C820E8AA0C00AE25C7 /* ZYFMyCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFMyCenterViewController.h; sourceTree = "<group>"; };
+		9CA2E5C920E8AA0C00AE25C7 /* ZYFMyCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFMyCenterViewController.m; sourceTree = "<group>"; };
+		9CA2E5CB20E8B00900AE25C7 /* DCObjManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCObjManager.h; sourceTree = "<group>"; };
+		9CA2E5CC20E8B00A00AE25C7 /* DCObjManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCObjManager.m; sourceTree = "<group>"; };
 		9CEF706320E38EB4002192BA /* GuoMeiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuoMeiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEF706D20E38EB4002192BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CEF706F20E38EB5002192BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,6 +173,8 @@
 		9CA2E4C720E759E100AE25C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9CA2E5B720E89CE500AE25C7 /* ZYFTabBadgeView.h */,
+				9CA2E5B820E89CE500AE25C7 /* ZYFTabBadgeView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +256,10 @@
 		9CA2E4D320E75B3500AE25C7 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				9CA2E5CB20E8B00900AE25C7 /* DCObjManager.h */,
+				9CA2E5CC20E8B00A00AE25C7 /* DCObjManager.m */,
+				9CA2E5BB20E8A04300AE25C7 /* DCSpeedy.h */,
+				9CA2E5BA20E8A04200AE25C7 /* DCSpeedy.m */,
 			);
 			path = "Tools(工具)";
 			sourceTree = "<group>";
@@ -302,6 +323,8 @@
 		9CA2E58020E7EFC800AE25C7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9CA2E5BD20E8A8B700AE25C7 /* ZYFHandPickViewController.h */,
+				9CA2E5BE20E8A8B700AE25C7 /* ZYFHandPickViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -514,6 +537,70 @@
 			path = ShowView;
 			sourceTree = "<group>";
 		};
+		9CA2E5C020E8A9AE00AE25C7 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5C520E8A9D700AE25C7 /* Controller */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		9CA2E5C120E8A9B600AE25C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5C420E8A9C900AE25C7 /* Controller */,
+				9CA2E5C320E8A9C500AE25C7 /* View */,
+				9CA2E5C220E8A9BF00AE25C7 /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9CA2E5C220E8A9BF00AE25C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CA2E5C320E8A9C500AE25C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CA2E5C420E8A9C900AE25C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5C720E8A9F000AE25C7 /* SubController */,
+				9CA2E5C620E8A9EB00AE25C7 /* Main */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9CA2E5C520E8A9D700AE25C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9CA2E5C620E8A9EB00AE25C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5C820E8AA0C00AE25C7 /* ZYFMyCenterViewController.h */,
+				9CA2E5C920E8AA0C00AE25C7 /* ZYFMyCenterViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9CA2E5C720E8A9F000AE25C7 /* SubController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubController;
+			sourceTree = "<group>";
+		};
 		9CEF705A20E38EB4002192BA = {
 			isa = PBXGroup;
 			children = (
@@ -678,6 +765,8 @@
 		9CEF70A220E38F94002192BA /* MyCenter(个人中心) */ = {
 			isa = PBXGroup;
 			children = (
+				9CA2E5C120E8A9B600AE25C7 /* Main */,
+				9CA2E5C020E8A9AE00AE25C7 /* Setting */,
 			);
 			path = "MyCenter(个人中心)";
 			sourceTree = "<group>";
@@ -742,6 +831,7 @@
 				9CEF705F20E38EB4002192BA /* Sources */,
 				9CEF706020E38EB4002192BA /* Frameworks */,
 				9CEF706120E38EB4002192BA /* Resources */,
+				B1516B939ED8AE2050622D89 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -880,6 +970,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B1516B939ED8AE2050622D89 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GuoMeiApp/Pods-GuoMeiApp-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuoMeiApp/Pods-GuoMeiApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D2E830869B039A992F83370E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -925,13 +1033,17 @@
 			files = (
 				9CA2E57820E7EDE600AE25C7 /* UIBarButtonItem+DCBarButtonItem.m in Sources */,
 				9CA2E55320E7E49500AE25C7 /* ZYFFeatureCell.m in Sources */,
+				9CA2E5B920E89CE500AE25C7 /* ZYFTabBadgeView.m in Sources */,
 				9CEF70AC20E39181002192BA /* ZYFBeautyMessageViewController.m in Sources */,
 				9CA2E55020E7E48000AE25C7 /* ZYFFeatureViewController.m in Sources */,
+				9CA2E5CA20E8AA0C00AE25C7 /* ZYFMyCenterViewController.m in Sources */,
+				9CA2E5CD20E8B00B00AE25C7 /* DCObjManager.m in Sources */,
 				9CA2E4E220E77B9B00AE25C7 /* ZYFTabBarController.m in Sources */,
 				9CA2E4DB20E75C3C00AE25C7 /* DCConsts.m in Sources */,
 				9CA2E59520E7F2C300AE25C7 /* ZYFLoginViewController.m in Sources */,
 				9CA2E59920E7F2D900AE25C7 /* ZYFRegisteredViewController.m in Sources */,
 				9CA2E5AD20E898D900AE25C7 /* ZYFGoodDetailViewController.m in Sources */,
+				9CA2E5BF20E8A8B700AE25C7 /* ZYFHandPickViewController.m in Sources */,
 				9CEF707620E38EB5002192BA /* main.m in Sources */,
 				9CA2E58C20E7F0E700AE25C7 /* ZYFBaseSetViewController.m in Sources */,
 				9CA2E4DF20E7755700AE25C7 /* ZYFAppVersionTool.m in Sources */,
@@ -942,6 +1054,7 @@
 				9CA2E5B620E8995500AE25C7 /* ZYFCommodityViewController.m in Sources */,
 				9CA2E5A820E8989500AE25C7 /* ZYFBeautyShopViewController.m in Sources */,
 				9CA2E4CD20E75A0800AE25C7 /* ZYFNavigationController.m in Sources */,
+				9CA2E5BC20E8A04300AE25C7 /* DCSpeedy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

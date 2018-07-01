@@ -8,7 +8,11 @@ target 'GuoMeiApp' do
   # Pods for GuoMeiApp
  pod 'GQGesVCTransition', '~> 0.0.5'
  pod 'CDDPagerController', '~> 1.1.4'
-  target 'GuoMeiAppTests' do
+ pod 'Masonry', '~> 1.1.0'
+ pod 'AFNetworking', '~> 3.2.0'
+ pod 'IQKeyboardManager', '~> 6.0.2'
+ pod 'MJExtension', '~> 3.0.13'
+   target 'GuoMeiAppTests' do
     inherit! :search_paths
     # Pods for testing
   end
