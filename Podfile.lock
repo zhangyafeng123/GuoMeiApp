@@ -1,0 +1,20 @@
+PODS:
+  - CDDPagerController (1.1.4)
+  - GQGesVCTransition (0.0.5)
+
+DEPENDENCIES:
+  - CDDPagerController (~> 1.1.4)
+  - GQGesVCTransition (~> 0.0.5)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CDDPagerController
+    - GQGesVCTransition
+
+SPEC CHECKSUMS:
+  CDDPagerController: 252632078b543e57ca3c052bf1f25759b6c862a6
+  GQGesVCTransition: e4991d52fa30bdb25da6df1b80f83ffd8c4679da
+
+PODFILE CHECKSUM: 95b8289838b70cd5b3f4474b6b8decf6163d5733
+
+COCOAPODS: 1.5.0

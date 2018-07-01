@@ -7,14 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9CEF706820E38EB4002192BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF706720E38EB4002192BA /* AppDelegate.m */; };
-		9CEF706B20E38EB4002192BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF706A20E38EB4002192BA /* ViewController.m */; };
+		240448E39987050DA992CB75 /* libPods-GuoMeiAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C44C99426D4A6E7B4ACB19 /* libPods-GuoMeiAppUITests.a */; };
+		8E7DCE3F144FE0D9A4F28C42 /* libPods-GuoMeiAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9087E9F4CC5D309E20BDF1D6 /* libPods-GuoMeiAppTests.a */; };
+		9CA2E4CD20E75A0800AE25C7 /* ZYFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E4CC20E75A0800AE25C7 /* ZYFNavigationController.m */; };
+		9CA2E4DB20E75C3C00AE25C7 /* DCConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E4D920E75C3B00AE25C7 /* DCConsts.m */; };
+		9CA2E4DC20E75C3C00AE25C7 /* DCNotificationCenterName.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E4DA20E75C3C00AE25C7 /* DCNotificationCenterName.m */; };
+		9CA2E4DF20E7755700AE25C7 /* ZYFAppVersionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E4DE20E7755700AE25C7 /* ZYFAppVersionTool.m */; };
+		9CA2E4E220E77B9B00AE25C7 /* ZYFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E4E120E77B9B00AE25C7 /* ZYFTabBarController.m */; };
+		9CA2E55020E7E48000AE25C7 /* ZYFFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E54F20E7E48000AE25C7 /* ZYFFeatureViewController.m */; };
+		9CA2E55320E7E49500AE25C7 /* ZYFFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E55220E7E49500AE25C7 /* ZYFFeatureCell.m */; };
+		9CA2E57820E7EDE600AE25C7 /* UIBarButtonItem+DCBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E57720E7EDE500AE25C7 /* UIBarButtonItem+DCBarButtonItem.m */; };
+		9CA2E57B20E7EDF100AE25C7 /* UIView+DCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E57A20E7EDF100AE25C7 /* UIView+DCExtension.m */; };
+		9CA2E58C20E7F0E700AE25C7 /* ZYFBaseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E58B20E7F0E700AE25C7 /* ZYFBaseSetViewController.m */; };
+		9CA2E59520E7F2C300AE25C7 /* ZYFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E59320E7F2C300AE25C7 /* ZYFLoginViewController.m */; };
+		9CA2E59620E7F2C300AE25C7 /* ZYFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA2E59420E7F2C300AE25C7 /* ZYFLoginViewController.xib */; };
+		9CA2E59920E7F2D900AE25C7 /* ZYFRegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E59820E7F2D900AE25C7 /* ZYFRegisteredViewController.m */; };
+		9CA2E5A520E8986A00AE25C7 /* ZYFMediaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5A420E8986A00AE25C7 /* ZYFMediaListViewController.m */; };
+		9CA2E5A820E8989500AE25C7 /* ZYFBeautyShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5A720E8989500AE25C7 /* ZYFBeautyShopViewController.m */; };
+		9CA2E5AD20E898D900AE25C7 /* ZYFGoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5AC20E898D900AE25C7 /* ZYFGoodDetailViewController.m */; };
+		9CA2E5B620E8995500AE25C7 /* ZYFCommodityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E5B520E8995500AE25C7 /* ZYFCommodityViewController.m */; };
 		9CEF706E20E38EB4002192BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF706C20E38EB4002192BA /* Main.storyboard */; };
 		9CEF707020E38EB5002192BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF706F20E38EB5002192BA /* Assets.xcassets */; };
 		9CEF707320E38EB5002192BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF707120E38EB5002192BA /* LaunchScreen.storyboard */; };
 		9CEF707620E38EB5002192BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF707520E38EB5002192BA /* main.m */; };
 		9CEF708020E38EB6002192BA /* GuoMeiAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF707F20E38EB6002192BA /* GuoMeiAppTests.m */; };
 		9CEF708B20E38EB6002192BA /* GuoMeiAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF708A20E38EB6002192BA /* GuoMeiAppUITests.m */; };
+		9CEF70A920E38FC7002192BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF70A720E38FC7002192BA /* AppDelegate.m */; };
+		9CEF70AC20E39181002192BA /* ZYFBeautyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF70AB20E39181002192BA /* ZYFBeautyMessageViewController.m */; };
+		C26A05943FA05F04B9DE2D96 /* libPods-GuoMeiApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0719B0080CE88AA5BC76AC /* libPods-GuoMeiApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +55,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A0719B0080CE88AA5BC76AC /* libPods-GuoMeiApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GuoMeiApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9087E9F4CC5D309E20BDF1D6 /* libPods-GuoMeiAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GuoMeiAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E45C963CE87DB776A20217 /* Pods-GuoMeiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuoMeiApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuoMeiApp/Pods-GuoMeiApp.release.xcconfig"; sourceTree = "<group>"; };
+		9CA2E4CB20E75A0800AE25C7 /* ZYFNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFNavigationController.h; sourceTree = "<group>"; };
+		9CA2E4CC20E75A0800AE25C7 /* ZYFNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFNavigationController.m; sourceTree = "<group>"; };
+		9CA2E4D520E75B5800AE25C7 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		9CA2E4D620E75C0700AE25C7 /* Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
+		9CA2E4D720E75C3A00AE25C7 /* DCConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCConsts.h; sourceTree = "<group>"; };
+		9CA2E4D820E75C3A00AE25C7 /* DCNotificationCenterName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCNotificationCenterName.h; sourceTree = "<group>"; };
+		9CA2E4D920E75C3B00AE25C7 /* DCConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCConsts.m; sourceTree = "<group>"; };
+		9CA2E4DA20E75C3C00AE25C7 /* DCNotificationCenterName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCNotificationCenterName.m; sourceTree = "<group>"; };
+		9CA2E4DD20E7755700AE25C7 /* ZYFAppVersionTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFAppVersionTool.h; sourceTree = "<group>"; };
+		9CA2E4DE20E7755700AE25C7 /* ZYFAppVersionTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFAppVersionTool.m; sourceTree = "<group>"; };
+		9CA2E4E020E77B9B00AE25C7 /* ZYFTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFTabBarController.h; sourceTree = "<group>"; };
+		9CA2E4E120E77B9B00AE25C7 /* ZYFTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFTabBarController.m; sourceTree = "<group>"; };
+		9CA2E54E20E7E48000AE25C7 /* ZYFFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFFeatureViewController.h; sourceTree = "<group>"; };
+		9CA2E54F20E7E48000AE25C7 /* ZYFFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFFeatureViewController.m; sourceTree = "<group>"; };
+		9CA2E55120E7E49500AE25C7 /* ZYFFeatureCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFFeatureCell.h; sourceTree = "<group>"; };
+		9CA2E55220E7E49500AE25C7 /* ZYFFeatureCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFFeatureCell.m; sourceTree = "<group>"; };
+		9CA2E57620E7EDE500AE25C7 /* UIBarButtonItem+DCBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+DCBarButtonItem.h"; sourceTree = "<group>"; };
+		9CA2E57720E7EDE500AE25C7 /* UIBarButtonItem+DCBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+DCBarButtonItem.m"; sourceTree = "<group>"; };
+		9CA2E57920E7EDF000AE25C7 /* UIView+DCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCExtension.h"; sourceTree = "<group>"; };
+		9CA2E57A20E7EDF100AE25C7 /* UIView+DCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCExtension.m"; sourceTree = "<group>"; };
+		9CA2E58A20E7F0E700AE25C7 /* ZYFBaseSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFBaseSetViewController.h; sourceTree = "<group>"; };
+		9CA2E58B20E7F0E700AE25C7 /* ZYFBaseSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFBaseSetViewController.m; sourceTree = "<group>"; };
+		9CA2E59220E7F2C300AE25C7 /* ZYFLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFLoginViewController.h; sourceTree = "<group>"; };
+		9CA2E59320E7F2C300AE25C7 /* ZYFLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFLoginViewController.m; sourceTree = "<group>"; };
+		9CA2E59420E7F2C300AE25C7 /* ZYFLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZYFLoginViewController.xib; sourceTree = "<group>"; };
+		9CA2E59720E7F2D900AE25C7 /* ZYFRegisteredViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFRegisteredViewController.h; sourceTree = "<group>"; };
+		9CA2E59820E7F2D900AE25C7 /* ZYFRegisteredViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFRegisteredViewController.m; sourceTree = "<group>"; };
+		9CA2E5A320E8986A00AE25C7 /* ZYFMediaListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFMediaListViewController.h; sourceTree = "<group>"; };
+		9CA2E5A420E8986A00AE25C7 /* ZYFMediaListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFMediaListViewController.m; sourceTree = "<group>"; };
+		9CA2E5A620E8989500AE25C7 /* ZYFBeautyShopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFBeautyShopViewController.h; sourceTree = "<group>"; };
+		9CA2E5A720E8989500AE25C7 /* ZYFBeautyShopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFBeautyShopViewController.m; sourceTree = "<group>"; };
+		9CA2E5AB20E898D900AE25C7 /* ZYFGoodDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFGoodDetailViewController.h; sourceTree = "<group>"; };
+		9CA2E5AC20E898D900AE25C7 /* ZYFGoodDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFGoodDetailViewController.m; sourceTree = "<group>"; };
+		9CA2E5B420E8995500AE25C7 /* ZYFCommodityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFCommodityViewController.h; sourceTree = "<group>"; };
+		9CA2E5B520E8995500AE25C7 /* ZYFCommodityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFCommodityViewController.m; sourceTree = "<group>"; };
 		9CEF706320E38EB4002192BA /* GuoMeiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuoMeiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CEF706620E38EB4002192BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9CEF706720E38EB4002192BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9CEF706920E38EB4002192BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9CEF706A20E38EB4002192BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9CEF706D20E38EB4002192BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CEF706F20E38EB5002192BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CEF707220E38EB5002192BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +105,16 @@
 		9CEF708620E38EB6002192BA /* GuoMeiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuoMeiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEF708A20E38EB6002192BA /* GuoMeiAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuoMeiAppUITests.m; sourceTree = "<group>"; };
 		9CEF708C20E38EB6002192BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CEF70A720E38FC7002192BA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CEF70A820E38FC7002192BA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9CEF70AA20E39181002192BA /* ZYFBeautyMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFBeautyMessageViewController.h; sourceTree = "<group>"; };
+		9CEF70AB20E39181002192BA /* ZYFBeautyMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFBeautyMessageViewController.m; sourceTree = "<group>"; };
+		A7C44C99426D4A6E7B4ACB19 /* libPods-GuoMeiAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GuoMeiAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0754C7135D9C74D725AE050 /* Pods-GuoMeiAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuoMeiAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuoMeiAppUITests/Pods-GuoMeiAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BDAC1945DE3A6AED9A291D52 /* Pods-GuoMeiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuoMeiApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuoMeiApp/Pods-GuoMeiApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D66AF2BFD4E422C223822459 /* Pods-GuoMeiAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuoMeiAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuoMeiAppTests/Pods-GuoMeiAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F81F11CDBBD3EF33FFB684FE /* Pods-GuoMeiAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuoMeiAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuoMeiAppTests/Pods-GuoMeiAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		FBCAF1FBCFBBAA3F5356BE8D /* Pods-GuoMeiAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuoMeiAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuoMeiAppUITests/Pods-GuoMeiAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26A05943FA05F04B9DE2D96 /* libPods-GuoMeiApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E7DCE3F144FE0D9A4F28C42 /* libPods-GuoMeiAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +138,382 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				240448E39987050DA992CB75 /* libPods-GuoMeiAppUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0690923FC79EDFFADC2186A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A0719B0080CE88AA5BC76AC /* libPods-GuoMeiApp.a */,
+				9087E9F4CC5D309E20BDF1D6 /* libPods-GuoMeiAppTests.a */,
+				A7C44C99426D4A6E7B4ACB19 /* libPods-GuoMeiAppUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CA2E4C720E759E100AE25C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CA2E4C820E759E100AE25C7 /* AppVersion */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E4DD20E7755700AE25C7 /* ZYFAppVersionTool.h */,
+				9CA2E4DE20E7755700AE25C7 /* ZYFAppVersionTool.m */,
+			);
+			path = AppVersion;
+			sourceTree = "<group>";
+		};
+		9CA2E4C920E759E100AE25C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E4CB20E75A0800AE25C7 /* ZYFNavigationController.h */,
+				9CA2E4CC20E75A0800AE25C7 /* ZYFNavigationController.m */,
+				9CA2E4E020E77B9B00AE25C7 /* ZYFTabBarController.h */,
+				9CA2E4E120E77B9B00AE25C7 /* ZYFTabBarController.m */,
+				9CA2E58A20E7F0E700AE25C7 /* ZYFBaseSetViewController.h */,
+				9CA2E58B20E7F0E700AE25C7 /* ZYFBaseSetViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9CA2E4CA20E759E100AE25C7 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		9CA2E4CE20E75B3500AE25C7 /* Macros(宏) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E4D520E75B5800AE25C7 /* Macros.h */,
+			);
+			path = "Macros(宏)";
+			sourceTree = "<group>";
+		};
+		9CA2E4CF20E75B3500AE25C7 /* Const(常量) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E4D720E75C3A00AE25C7 /* DCConsts.h */,
+				9CA2E4D920E75C3B00AE25C7 /* DCConsts.m */,
+				9CA2E4D820E75C3A00AE25C7 /* DCNotificationCenterName.h */,
+				9CA2E4DA20E75C3C00AE25C7 /* DCNotificationCenterName.m */,
+			);
+			path = "Const(常量)";
+			sourceTree = "<group>";
+		};
+		9CA2E4D020E75B3500AE25C7 /* CustionButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustionButton;
+			sourceTree = "<group>";
+		};
+		9CA2E4D120E75B3500AE25C7 /* Headers(头文件) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E4D620E75C0700AE25C7 /* Headers.h */,
+			);
+			path = "Headers(头文件)";
+			sourceTree = "<group>";
+		};
+		9CA2E4D220E75B3500AE25C7 /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E57920E7EDF000AE25C7 /* UIView+DCExtension.h */,
+				9CA2E57A20E7EDF100AE25C7 /* UIView+DCExtension.m */,
+				9CA2E57620E7EDE500AE25C7 /* UIBarButtonItem+DCBarButtonItem.h */,
+				9CA2E57720E7EDE500AE25C7 /* UIBarButtonItem+DCBarButtonItem.m */,
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
+		9CA2E4D320E75B3500AE25C7 /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tools(工具)";
+			sourceTree = "<group>";
+		};
+		9CA2E4D420E75B3500AE25C7 /* Vendors(第三方) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Vendors(第三方)";
+			sourceTree = "<group>";
+		};
+		9CA2E54C20E7E45B00AE25C7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E54E20E7E48000AE25C7 /* ZYFFeatureViewController.h */,
+				9CA2E54F20E7E48000AE25C7 /* ZYFFeatureViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9CA2E54D20E7E46900AE25C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E55120E7E49500AE25C7 /* ZYFFeatureCell.h */,
+				9CA2E55220E7E49500AE25C7 /* ZYFFeatureCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CA2E57C20E7EF9C00AE25C7 /* Scan(扫描) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Scan(扫描)";
+			sourceTree = "<group>";
+		};
+		9CA2E57D20E7EFA700AE25C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E58020E7EFC800AE25C7 /* Controller */,
+				9CA2E57F20E7EFC100AE25C7 /* View */,
+				9CA2E57E20E7EFB000AE25C7 /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9CA2E57E20E7EFB000AE25C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CA2E57F20E7EFC100AE25C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CA2E58020E7EFC800AE25C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9CA2E58120E7EFE500AE25C7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5AA20E898BB00AE25C7 /* Detail */,
+				9CA2E5A920E898B600AE25C7 /* Main */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9CA2E58220E7EFED00AE25C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CA2E58320E7EFF200AE25C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CA2E58420E7F03E00AE25C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CA2E58520E7F03E00AE25C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CA2E58620E7F03E00AE25C7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9CA2E58720E7F05000AE25C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CA2E58820E7F05000AE25C7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5B320E8993F00AE25C7 /* ShowView */,
+				9CA2E5B220E8993800AE25C7 /* Main */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9CA2E58920E7F05000AE25C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CA2E58D20E7F29500AE25C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CA2E58E20E7F29A00AE25C7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E59220E7F2C300AE25C7 /* ZYFLoginViewController.h */,
+				9CA2E59320E7F2C300AE25C7 /* ZYFLoginViewController.m */,
+				9CA2E59420E7F2C300AE25C7 /* ZYFLoginViewController.xib */,
+				9CA2E59720E7F2D900AE25C7 /* ZYFRegisteredViewController.h */,
+				9CA2E59820E7F2D900AE25C7 /* ZYFRegisteredViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9CA2E59C20E897E600AE25C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E59F20E897F900AE25C7 /* View */,
+				9CA2E59E20E897F300AE25C7 /* Model */,
+				9CA2E59D20E897ED00AE25C7 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9CA2E59D20E897ED00AE25C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5A620E8989500AE25C7 /* ZYFBeautyShopViewController.h */,
+				9CA2E5A720E8989500AE25C7 /* ZYFBeautyShopViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9CA2E59E20E897F300AE25C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CA2E59F20E897F900AE25C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CA2E5A020E8980D00AE25C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5A220E8981C00AE25C7 /* View */,
+				9CA2E5A120E8981600AE25C7 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9CA2E5A120E8981600AE25C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5A320E8986A00AE25C7 /* ZYFMediaListViewController.h */,
+				9CA2E5A420E8986A00AE25C7 /* ZYFMediaListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9CA2E5A220E8981C00AE25C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CA2E5A920E898B600AE25C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5AB20E898D900AE25C7 /* ZYFGoodDetailViewController.h */,
+				9CA2E5AC20E898D900AE25C7 /* ZYFGoodDetailViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9CA2E5AA20E898BB00AE25C7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5B120E8991200AE25C7 /* GoodsParticulars(商品详情) */,
+				9CA2E5B020E898FF00AE25C7 /* GoodsFiltrate(商品筛选) */,
+				9CA2E5AF20E898F200AE25C7 /* GoodsComments(商品评论) */,
+				9CA2E5AE20E898E500AE25C7 /* GoodsBase(商品主页) */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		9CA2E5AE20E898E500AE25C7 /* GoodsBase(商品主页) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "GoodsBase(商品主页)";
+			sourceTree = "<group>";
+		};
+		9CA2E5AF20E898F200AE25C7 /* GoodsComments(商品评论) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "GoodsComments(商品评论)";
+			sourceTree = "<group>";
+		};
+		9CA2E5B020E898FF00AE25C7 /* GoodsFiltrate(商品筛选) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "GoodsFiltrate(商品筛选)";
+			sourceTree = "<group>";
+		};
+		9CA2E5B120E8991200AE25C7 /* GoodsParticulars(商品详情) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "GoodsParticulars(商品详情)";
+			sourceTree = "<group>";
+		};
+		9CA2E5B220E8993800AE25C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5B420E8995500AE25C7 /* ZYFCommodityViewController.h */,
+				9CA2E5B520E8995500AE25C7 /* ZYFCommodityViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9CA2E5B320E8993F00AE25C7 /* ShowView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShowView;
+			sourceTree = "<group>";
+		};
 		9CEF705A20E38EB4002192BA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +521,8 @@
 				9CEF707E20E38EB6002192BA /* GuoMeiAppTests */,
 				9CEF708920E38EB6002192BA /* GuoMeiAppUITests */,
 				9CEF706420E38EB4002192BA /* Products */,
+				E34101732262C42A4F390E0A /* Pods */,
+				0690923FC79EDFFADC2186A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +539,7 @@
 		9CEF706520E38EB4002192BA /* GuoMeiApp */ = {
 			isa = PBXGroup;
 			children = (
-				9CEF706620E38EB4002192BA /* AppDelegate.h */,
-				9CEF706720E38EB4002192BA /* AppDelegate.m */,
-				9CEF706920E38EB4002192BA /* ViewController.h */,
-				9CEF706A20E38EB4002192BA /* ViewController.m */,
+				9CEF709820E38F94002192BA /* Classes */,
 				9CEF706C20E38EB4002192BA /* Main.storyboard */,
 				9CEF706F20E38EB5002192BA /* Assets.xcassets */,
 				9CEF707120E38EB5002192BA /* LaunchScreen.storyboard */,
@@ -132,6 +567,170 @@
 			path = GuoMeiAppUITests;
 			sourceTree = "<group>";
 		};
+		9CEF709820E38F94002192BA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9CEF709920E38F94002192BA /* Home(首页) */,
+				9CEF709E20E38F94002192BA /* Details(商品详情) */,
+				9CEF70A120E38F94002192BA /* Classify(分类) */,
+				9CEF709A20E38F94002192BA /* MediaList(美媒榜) */,
+				9CEF709B20E38F94002192BA /* Expand(扩展) */,
+				9CEF709C20E38F94002192BA /* BeautyMessage(美信) */,
+				9CEF709D20E38F94002192BA /* LoginMe(登录) */,
+				9CEF709F20E38F94002192BA /* ShoppingCar(购物车) */,
+				9CEF70A020E38F94002192BA /* BeautyShop(美店) */,
+				9CEF70A220E38F94002192BA /* MyCenter(个人中心) */,
+				9CEF70A320E38F94002192BA /* NewFeature(新特性) */,
+				9CEF70A420E38F94002192BA /* Appdelegate */,
+				9CEF70A520E38F94002192BA /* Resource */,
+				9CEF70A620E38F94002192BA /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9CEF709920E38F94002192BA /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E57D20E7EFA700AE25C7 /* Main */,
+				9CA2E57C20E7EF9C00AE25C7 /* Scan(扫描) */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		9CEF709A20E38F94002192BA /* MediaList(美媒榜) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E5A020E8980D00AE25C7 /* Main */,
+			);
+			path = "MediaList(美媒榜)";
+			sourceTree = "<group>";
+		};
+		9CEF709B20E38F94002192BA /* Expand(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E4D220E75B3500AE25C7 /* Category(分类) */,
+				9CA2E4CF20E75B3500AE25C7 /* Const(常量) */,
+				9CA2E4D020E75B3500AE25C7 /* CustionButton */,
+				9CA2E4D120E75B3500AE25C7 /* Headers(头文件) */,
+				9CA2E4CE20E75B3500AE25C7 /* Macros(宏) */,
+				9CA2E4D320E75B3500AE25C7 /* Tools(工具) */,
+				9CA2E4D420E75B3500AE25C7 /* Vendors(第三方) */,
+			);
+			path = "Expand(扩展)";
+			sourceTree = "<group>";
+		};
+		9CEF709C20E38F94002192BA /* BeautyMessage(美信) */ = {
+			isa = PBXGroup;
+			children = (
+				9CEF70AA20E39181002192BA /* ZYFBeautyMessageViewController.h */,
+				9CEF70AB20E39181002192BA /* ZYFBeautyMessageViewController.m */,
+			);
+			path = "BeautyMessage(美信)";
+			sourceTree = "<group>";
+		};
+		9CEF709D20E38F94002192BA /* LoginMe(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E58E20E7F29A00AE25C7 /* ViewController */,
+				9CA2E58D20E7F29500AE25C7 /* View */,
+			);
+			path = "LoginMe(登录)";
+			sourceTree = "<group>";
+		};
+		9CEF709E20E38F94002192BA /* Details(商品详情) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E58320E7EFF200AE25C7 /* Model */,
+				9CA2E58220E7EFED00AE25C7 /* View */,
+				9CA2E58120E7EFE500AE25C7 /* ViewController */,
+			);
+			path = "Details(商品详情)";
+			sourceTree = "<group>";
+		};
+		9CEF709F20E38F94002192BA /* ShoppingCar(购物车) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E58520E7F03E00AE25C7 /* Model */,
+				9CA2E58420E7F03E00AE25C7 /* View */,
+				9CA2E58620E7F03E00AE25C7 /* ViewController */,
+			);
+			path = "ShoppingCar(购物车)";
+			sourceTree = "<group>";
+		};
+		9CEF70A020E38F94002192BA /* BeautyShop(美店) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E59C20E897E600AE25C7 /* Main */,
+			);
+			path = "BeautyShop(美店)";
+			sourceTree = "<group>";
+		};
+		9CEF70A120E38F94002192BA /* Classify(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E58720E7F05000AE25C7 /* Model */,
+				9CA2E58920E7F05000AE25C7 /* View */,
+				9CA2E58820E7F05000AE25C7 /* ViewController */,
+			);
+			path = "Classify(分类)";
+			sourceTree = "<group>";
+		};
+		9CEF70A220E38F94002192BA /* MyCenter(个人中心) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MyCenter(个人中心)";
+			sourceTree = "<group>";
+		};
+		9CEF70A320E38F94002192BA /* NewFeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E54D20E7E46900AE25C7 /* View */,
+				9CA2E54C20E7E45B00AE25C7 /* ViewController */,
+			);
+			path = "NewFeature(新特性)";
+			sourceTree = "<group>";
+		};
+		9CEF70A420E38F94002192BA /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9CEF70A820E38FC7002192BA /* AppDelegate.h */,
+				9CEF70A720E38FC7002192BA /* AppDelegate.m */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		9CEF70A520E38F94002192BA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9CEF70A620E38F94002192BA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9CA2E4C820E759E100AE25C7 /* AppVersion */,
+				9CA2E4C920E759E100AE25C7 /* Controller */,
+				9CA2E4CA20E759E100AE25C7 /* UserInfo */,
+				9CA2E4C720E759E100AE25C7 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E34101732262C42A4F390E0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDAC1945DE3A6AED9A291D52 /* Pods-GuoMeiApp.debug.xcconfig */,
+				97E45C963CE87DB776A20217 /* Pods-GuoMeiApp.release.xcconfig */,
+				D66AF2BFD4E422C223822459 /* Pods-GuoMeiAppTests.debug.xcconfig */,
+				F81F11CDBBD3EF33FFB684FE /* Pods-GuoMeiAppTests.release.xcconfig */,
+				FBCAF1FBCFBBAA3F5356BE8D /* Pods-GuoMeiAppUITests.debug.xcconfig */,
+				B0754C7135D9C74D725AE050 /* Pods-GuoMeiAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +738,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CEF708F20E38EB6002192BA /* Build configuration list for PBXNativeTarget "GuoMeiApp" */;
 			buildPhases = (
+				D2E830869B039A992F83370E /* [CP] Check Pods Manifest.lock */,
 				9CEF705F20E38EB4002192BA /* Sources */,
 				9CEF706020E38EB4002192BA /* Frameworks */,
 				9CEF706120E38EB4002192BA /* Resources */,
@@ -156,6 +756,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CEF709220E38EB6002192BA /* Build configuration list for PBXNativeTarget "GuoMeiAppTests" */;
 			buildPhases = (
+				F6858485D56992A81344AC50 /* [CP] Check Pods Manifest.lock */,
 				9CEF707720E38EB6002192BA /* Sources */,
 				9CEF707820E38EB6002192BA /* Frameworks */,
 				9CEF707920E38EB6002192BA /* Resources */,
@@ -174,6 +775,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CEF709520E38EB6002192BA /* Build configuration list for PBXNativeTarget "GuoMeiAppUITests" */;
 			buildPhases = (
+				8B8E6131921F7D6B19F84F98 /* [CP] Check Pods Manifest.lock */,
 				9CEF708220E38EB6002192BA /* Sources */,
 				9CEF708320E38EB6002192BA /* Frameworks */,
 				9CEF708420E38EB6002192BA /* Resources */,
@@ -194,6 +796,7 @@
 		9CEF705B20E38EB4002192BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZYF;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = com.justsee;
 				TargetAttributes = {
@@ -235,6 +838,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA2E59620E7F2C300AE25C7 /* ZYFLoginViewController.xib in Resources */,
 				9CEF707320E38EB5002192BA /* LaunchScreen.storyboard in Resources */,
 				9CEF707020E38EB5002192BA /* Assets.xcassets in Resources */,
 				9CEF706E20E38EB4002192BA /* Main.storyboard in Resources */,
@@ -257,14 +861,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B8E6131921F7D6B19F84F98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuoMeiAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2E830869B039A992F83370E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuoMeiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6858485D56992A81344AC50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuoMeiAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9CEF705F20E38EB4002192BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CEF706B20E38EB4002192BA /* ViewController.m in Sources */,
+				9CA2E57820E7EDE600AE25C7 /* UIBarButtonItem+DCBarButtonItem.m in Sources */,
+				9CA2E55320E7E49500AE25C7 /* ZYFFeatureCell.m in Sources */,
+				9CEF70AC20E39181002192BA /* ZYFBeautyMessageViewController.m in Sources */,
+				9CA2E55020E7E48000AE25C7 /* ZYFFeatureViewController.m in Sources */,
+				9CA2E4E220E77B9B00AE25C7 /* ZYFTabBarController.m in Sources */,
+				9CA2E4DB20E75C3C00AE25C7 /* DCConsts.m in Sources */,
+				9CA2E59520E7F2C300AE25C7 /* ZYFLoginViewController.m in Sources */,
+				9CA2E59920E7F2D900AE25C7 /* ZYFRegisteredViewController.m in Sources */,
+				9CA2E5AD20E898D900AE25C7 /* ZYFGoodDetailViewController.m in Sources */,
 				9CEF707620E38EB5002192BA /* main.m in Sources */,
-				9CEF706820E38EB4002192BA /* AppDelegate.m in Sources */,
+				9CA2E58C20E7F0E700AE25C7 /* ZYFBaseSetViewController.m in Sources */,
+				9CA2E4DF20E7755700AE25C7 /* ZYFAppVersionTool.m in Sources */,
+				9CA2E5A520E8986A00AE25C7 /* ZYFMediaListViewController.m in Sources */,
+				9CA2E4DC20E75C3C00AE25C7 /* DCNotificationCenterName.m in Sources */,
+				9CA2E57B20E7EDF100AE25C7 /* UIView+DCExtension.m in Sources */,
+				9CEF70A920E38FC7002192BA /* AppDelegate.m in Sources */,
+				9CA2E5B620E8995500AE25C7 /* ZYFCommodityViewController.m in Sources */,
+				9CA2E5A820E8989500AE25C7 /* ZYFBeautyShopViewController.m in Sources */,
+				9CA2E4CD20E75A0800AE25C7 /* ZYFNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,38 +1108,47 @@
 		};
 		9CEF709020E38EB6002192BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDAC1945DE3A6AED9A291D52 /* Pods-GuoMeiApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GuoMeiApp/Classes/Expand(扩展)/Headers(头文件)/Headers.h";
 				INFOPLIST_FILE = GuoMeiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.justsee.GuoMeiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9CEF709120E38EB6002192BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97E45C963CE87DB776A20217 /* Pods-GuoMeiApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GuoMeiApp/Classes/Expand(扩展)/Headers(头文件)/Headers.h";
 				INFOPLIST_FILE = GuoMeiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.justsee.GuoMeiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		9CEF709320E38EB6002192BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D66AF2BFD4E422C223822459 /* Pods-GuoMeiAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -481,6 +1167,7 @@
 		};
 		9CEF709420E38EB6002192BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F81F11CDBBD3EF33FFB684FE /* Pods-GuoMeiAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +1186,7 @@
 		};
 		9CEF709620E38EB6002192BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBCAF1FBCFBBAA3F5356BE8D /* Pods-GuoMeiAppUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GuoMeiAppUITests/Info.plist;
@@ -516,6 +1204,7 @@
 		};
 		9CEF709720E38EB6002192BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0754C7135D9C74D725AE050 /* Pods-GuoMeiAppUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GuoMeiAppUITests/Info.plist;
