@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		240448E39987050DA992CB75 /* libPods-GuoMeiAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C44C99426D4A6E7B4ACB19 /* libPods-GuoMeiAppUITests.a */; };
 		8E7DCE3F144FE0D9A4F28C42 /* libPods-GuoMeiAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9087E9F4CC5D309E20BDF1D6 /* libPods-GuoMeiAppTests.a */; };
+		9C424F1D20EA233F0044CD73 /* DCNewWelfareLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C424F1B20EA233E0044CD73 /* DCNewWelfareLayout.m */; };
+		9C424F2220EA23520044CD73 /* DCGoodsHandheldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C424F1E20EA234E0044CD73 /* DCGoodsHandheldCell.m */; };
+		9C424F2320EA23520044CD73 /* DCNewWelfareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C424F2120EA23520044CD73 /* DCNewWelfareCell.m */; };
+		9C6E8D6220E9BF40001822A1 /* ZYFHomeRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6E8D6120E9BF40001822A1 /* ZYFHomeRefreshGifHeader.m */; };
+		9C6E8D6520E9C74D001822A1 /* ZYFTopLineFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6E8D6420E9C74D001822A1 /* ZYFTopLineFootView.m */; };
+		9C6E8D6B20E9C8B8001822A1 /* UIView+DCRolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6E8D6820E9C8B5001822A1 /* UIView+DCRolling.m */; };
+		9C6E8D6C20E9C8B8001822A1 /* DCTitleRolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6E8D6920E9C8B6001822A1 /* DCTitleRolling.m */; };
 		9CA2E4CD20E75A0800AE25C7 /* ZYFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E4CC20E75A0800AE25C7 /* ZYFNavigationController.m */; };
 		9CA2E4DB20E75C3C00AE25C7 /* DCConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E4D920E75C3B00AE25C7 /* DCConsts.m */; };
 		9CA2E4DC20E75C3C00AE25C7 /* DCNotificationCenterName.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2E4DA20E75C3C00AE25C7 /* DCNotificationCenterName.m */; };
@@ -96,6 +103,20 @@
 		6A0719B0080CE88AA5BC76AC /* libPods-GuoMeiApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GuoMeiApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9087E9F4CC5D309E20BDF1D6 /* libPods-GuoMeiAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GuoMeiAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E45C963CE87DB776A20217 /* Pods-GuoMeiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuoMeiApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuoMeiApp/Pods-GuoMeiApp.release.xcconfig"; sourceTree = "<group>"; };
+		9C424F1B20EA233E0044CD73 /* DCNewWelfareLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCNewWelfareLayout.m; sourceTree = "<group>"; };
+		9C424F1C20EA233F0044CD73 /* DCNewWelfareLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCNewWelfareLayout.h; sourceTree = "<group>"; };
+		9C424F1E20EA234E0044CD73 /* DCGoodsHandheldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGoodsHandheldCell.m; sourceTree = "<group>"; };
+		9C424F1F20EA234F0044CD73 /* DCNewWelfareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCNewWelfareCell.h; sourceTree = "<group>"; };
+		9C424F2020EA23510044CD73 /* DCGoodsHandheldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCGoodsHandheldCell.h; sourceTree = "<group>"; };
+		9C424F2120EA23520044CD73 /* DCNewWelfareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCNewWelfareCell.m; sourceTree = "<group>"; };
+		9C6E8D6020E9BF40001822A1 /* ZYFHomeRefreshGifHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFHomeRefreshGifHeader.h; sourceTree = "<group>"; };
+		9C6E8D6120E9BF40001822A1 /* ZYFHomeRefreshGifHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFHomeRefreshGifHeader.m; sourceTree = "<group>"; };
+		9C6E8D6320E9C74D001822A1 /* ZYFTopLineFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFTopLineFootView.h; sourceTree = "<group>"; };
+		9C6E8D6420E9C74D001822A1 /* ZYFTopLineFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFTopLineFootView.m; sourceTree = "<group>"; };
+		9C6E8D6720E9C8B3001822A1 /* DCTitleRolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTitleRolling.h; sourceTree = "<group>"; };
+		9C6E8D6820E9C8B5001822A1 /* UIView+DCRolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCRolling.m"; sourceTree = "<group>"; };
+		9C6E8D6920E9C8B6001822A1 /* DCTitleRolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTitleRolling.m; sourceTree = "<group>"; };
+		9C6E8D6A20E9C8B7001822A1 /* UIView+DCRolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCRolling.h"; sourceTree = "<group>"; };
 		9CA2E4CB20E75A0800AE25C7 /* ZYFNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFNavigationController.h; sourceTree = "<group>"; };
 		9CA2E4CC20E75A0800AE25C7 /* ZYFNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFNavigationController.m; sourceTree = "<group>"; };
 		9CA2E4D520E75B5800AE25C7 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
@@ -241,6 +262,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9C6E8D6620E9C8A6001822A1 /* CDDTitleRolling */ = {
+			isa = PBXGroup;
+			children = (
+				9C6E8D6720E9C8B3001822A1 /* DCTitleRolling.h */,
+				9C6E8D6920E9C8B6001822A1 /* DCTitleRolling.m */,
+				9C6E8D6A20E9C8B7001822A1 /* UIView+DCRolling.h */,
+				9C6E8D6820E9C8B5001822A1 /* UIView+DCRolling.m */,
+			);
+			path = CDDTitleRolling;
+			sourceTree = "<group>";
+		};
 		9CA2E4C720E759E100AE25C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +372,7 @@
 		9CA2E4D420E75B3500AE25C7 /* Vendors(第三方) */ = {
 			isa = PBXGroup;
 			children = (
+				9C6E8D6620E9C8A6001822A1 /* CDDTitleRolling */,
 			);
 			path = "Vendors(第三方)";
 			sourceTree = "<group>";
@@ -395,6 +428,8 @@
 				9CA2E5F320E8CA9100AE25C7 /* CusSortLayout */,
 				9CA2E64020E8E75100AE25C7 /* ZYFHomeTopToolView.h */,
 				9CA2E64120E8E75100AE25C7 /* ZYFHomeTopToolView.m */,
+				9C6E8D6020E9BF40001822A1 /* ZYFHomeRefreshGifHeader.h */,
+				9C6E8D6120E9BF40001822A1 /* ZYFHomeRefreshGifHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -683,6 +718,8 @@
 		9CA2E5F320E8CA9100AE25C7 /* CusSortLayout */ = {
 			isa = PBXGroup;
 			children = (
+				9C424F1C20EA233F0044CD73 /* DCNewWelfareLayout.h */,
+				9C424F1B20EA233E0044CD73 /* DCNewWelfareLayout.m */,
 			);
 			path = CusSortLayout;
 			sourceTree = "<group>";
@@ -700,6 +737,10 @@
 		9CA2E5F520E8CAA800AE25C7 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				9C424F2020EA23510044CD73 /* DCGoodsHandheldCell.h */,
+				9C424F1E20EA234E0044CD73 /* DCGoodsHandheldCell.m */,
+				9C424F1F20EA234F0044CD73 /* DCNewWelfareCell.h */,
+				9C424F2120EA23520044CD73 /* DCNewWelfareCell.m */,
 				9CA2E5F820E8CAFC00AE25C7 /* ZYFGoodsGridCell.h */,
 				9CA2E5F920E8CAFC00AE25C7 /* ZYFGoodsGridCell.m */,
 			);
@@ -709,6 +750,8 @@
 		9CA2E5F620E8CAAF00AE25C7 /* Footer */ = {
 			isa = PBXGroup;
 			children = (
+				9C6E8D6320E9C74D001822A1 /* ZYFTopLineFootView.h */,
+				9C6E8D6420E9C74D001822A1 /* ZYFTopLineFootView.m */,
 			);
 			path = Footer;
 			sourceTree = "<group>";
@@ -1279,19 +1322,26 @@
 				9CA2E60020E8DE9000AE25C7 /* ZYFSlideshowHeadView.m in Sources */,
 				9CA2E59520E7F2C300AE25C7 /* ZYFLoginViewController.m in Sources */,
 				9CA2E59920E7F2D900AE25C7 /* ZYFRegisteredViewController.m in Sources */,
+				9C6E8D6520E9C74D001822A1 /* ZYFTopLineFootView.m in Sources */,
 				9CA2E5AD20E898D900AE25C7 /* ZYFGoodDetailViewController.m in Sources */,
+				9C6E8D6B20E9C8B8001822A1 /* UIView+DCRolling.m in Sources */,
 				9CA2E5BF20E8A8B700AE25C7 /* ZYFHandPickViewController.m in Sources */,
 				9CA2E5F220E8C8F400AE25C7 /* ZYFGridItem.m in Sources */,
 				9CA2E5FA20E8CAFC00AE25C7 /* ZYFGoodsGridCell.m in Sources */,
 				9CEF707620E38EB5002192BA /* main.m in Sources */,
 				9CA2E58C20E7F0E700AE25C7 /* ZYFBaseSetViewController.m in Sources */,
+				9C424F2220EA23520044CD73 /* DCGoodsHandheldCell.m in Sources */,
 				9CA2E4DF20E7755700AE25C7 /* ZYFAppVersionTool.m in Sources */,
+				9C424F1D20EA233F0044CD73 /* DCNewWelfareLayout.m in Sources */,
 				9CA2E5A520E8986A00AE25C7 /* ZYFMediaListViewController.m in Sources */,
 				9CA2E4DC20E75C3C00AE25C7 /* DCNotificationCenterName.m in Sources */,
+				9C6E8D6220E9BF40001822A1 /* ZYFHomeRefreshGifHeader.m in Sources */,
+				9C6E8D6C20E9C8B8001822A1 /* DCTitleRolling.m in Sources */,
 				9CA2E57B20E7EDF100AE25C7 /* UIView+DCExtension.m in Sources */,
 				9CEF70A920E38FC7002192BA /* AppDelegate.m in Sources */,
 				9CA2E5B620E8995500AE25C7 /* ZYFCommodityViewController.m in Sources */,
 				9CA2E5A820E8989500AE25C7 /* ZYFBeautyShopViewController.m in Sources */,
+				9C424F2320EA23520044CD73 /* DCNewWelfareCell.m in Sources */,
 				9CA2E5FD20E8D36300AE25C7 /* UIColor+ZYFColorChange.m in Sources */,
 				9CA2E4CD20E75A0800AE25C7 /* ZYFNavigationController.m in Sources */,
 				9CA2E5BC20E8A04300AE25C7 /* DCSpeedy.m in Sources */,

@@ -11,6 +11,9 @@
 #import "ZYFGoodsGridCell.h"
 #import "ZYFSlideshowHeadView.h"
 #import "ZYFHomeTopToolView.h"
+#import "ZYFHomeRefreshGifHeader.h"
+#import "ZYFTopLineFootView.h"
+#import "DCNewWelfareCell.h"
 @interface ZYFHandPickViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 /** collectionView **/
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -25,9 +28,11 @@
 @implementation ZYFHandPickViewController
 /** cell **/
 static NSString *const ZYFGoodsGridCellID = @"ZYFGoodsGridCell";
+static NSString *const ZYFNewWelfareCellID = @"ZYFNewWelfareCell";
 /** header **/
 static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
 /** footer **/
+static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
 #pragma mark ---- lazy ----
 -(UICollectionView *)collectionView
 {
@@ -41,10 +46,14 @@ static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
         
         /** cell **/
         [_collectionView registerClass:[ZYFGoodsGridCell class] forCellWithReuseIdentifier:ZYFGoodsGridCellID];
+        [_collectionView registerClass:[DCNewWelfareCell class] forCellWithReuseIdentifier:ZYFNewWelfareCellID];
         
         /** header **/
         [_collectionView registerClass:[ZYFSlideshowHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:ZYFSlideshowHeadViewID];
         /** footer **/
+        [_collectionView registerClass:[ZYFTopLineFootView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:ZYFTopLineFootViewID];
+        
+        
         [self.view addSubview:_collectionView];
     }
     return _collectionView;
@@ -59,6 +68,8 @@ static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
     [self setUpGoodsData];
     
     [self setUpScrollToTopView];
+    
+    [self setUpGIFRefresh];
     
 }
 #pragma mark ---- init ----
@@ -114,20 +125,37 @@ static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
     _backTopButton.hidden = YES;
     _backTopButton.frame = CGRectMake(ScreenW - 50, ScreenH - 110, 40, 40);
 }
+#pragma mark ---- 设置头部header ----
+- (void)setUpGIFRefresh
+{
+    self.collectionView.mj_header = [ZYFHomeRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(setUpRecData)];
+}
+#pragma mark ---- 刷新 ----
+- (void)setUpRecData
+{
+    WEAKSELF
+    /** 震动 **/
+    [DCSpeedy dc_callFeedback];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [weakSelf.collectionView.mj_header endRefreshing];
+    });
+}
 #pragma mark ---- UICollectionViewDataSource ----
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 1;
+    return 2;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     if (section == 0) {
         //10属性
         return _gridItem.count;
-    } else {
-        return 0;
     }
+    if (section == 1) {
+        return 1;
+    }
+    return 0;
     
 }
 
@@ -139,6 +167,10 @@ static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
         cell.gridItem = _gridItem[indexPath.row];
         cell.backgroundColor = [UIColor whiteColor];
         gridcell = cell;
+    } else if (indexPath.section == 1){//广告福利
+        DCNewWelfareCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZYFNewWelfareCellID forIndexPath:indexPath];
+        gridcell = cell;
+        
     }
     return gridcell;
 }
@@ -153,6 +185,14 @@ static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
             
         }
     }
+    
+    if (kind == UICollectionElementKindSectionFooter) {
+        if (indexPath.section == 0) {
+            ZYFTopLineFootView *footview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:ZYFTopLineFootViewID forIndexPath:indexPath];
+            resuableview = footview;
+        }
+    }
+    
     return resuableview;
 }
 
@@ -162,9 +202,11 @@ static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
     if (indexPath.section == 0) {
         //9宫格
         return CGSizeMake(ScreenW/5, ScreenW/5 + DCMargin);
-    } else {
-        return CGSizeZero;
     }
+    if (indexPath.section == 1) {
+        return CGSizeMake(ScreenW, 180);
+    }
+    return CGSizeZero;
 }
 
 #pragma mark ---- header宽高 ----
@@ -176,6 +218,15 @@ static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
     
     return CGSizeZero;
 }
+#pragma mark ---- footer宽高 ----
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
+{
+    if (section == 0) {
+        return CGSizeMake(ScreenW, 180);//Top头条宽高
+    }
+    return CGSizeZero;
+}
+
 #pragma mark - <UICollectionViewDelegateFlowLayout>
 #pragma mark - X间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
@@ -206,12 +257,6 @@ static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
 {
     [self.collectionView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
 }
-
-
-
-
-
-
 
 
 
