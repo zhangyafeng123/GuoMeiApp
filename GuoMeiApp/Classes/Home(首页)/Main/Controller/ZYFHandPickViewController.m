@@ -14,6 +14,8 @@
 #import "ZYFHomeRefreshGifHeader.h"
 #import "ZYFTopLineFootView.h"
 #import "DCNewWelfareCell.h"
+#import "ZYFGoodsCountDownCell.h"
+#import "DCCountDownHeadView.h"
 @interface ZYFHandPickViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 /** collectionView **/
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -29,8 +31,10 @@
 /** cell **/
 static NSString *const ZYFGoodsGridCellID = @"ZYFGoodsGridCell";
 static NSString *const ZYFNewWelfareCellID = @"ZYFNewWelfareCell";
+static NSString *const ZYFGoodsCountDownCellID = @"ZYFGoodsCountDownCell";
 /** header **/
 static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
+static NSString *const ZYFDCCountDownHeadViewID = @"DCCountDownHeadView";
 /** footer **/
 static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
 #pragma mark ---- lazy ----
@@ -47,9 +51,11 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
         /** cell **/
         [_collectionView registerClass:[ZYFGoodsGridCell class] forCellWithReuseIdentifier:ZYFGoodsGridCellID];
         [_collectionView registerClass:[DCNewWelfareCell class] forCellWithReuseIdentifier:ZYFNewWelfareCellID];
+        [_collectionView registerClass:[ZYFGoodsCountDownCell class] forCellWithReuseIdentifier:ZYFGoodsCountDownCellID];
         
         /** header **/
         [_collectionView registerClass:[ZYFSlideshowHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:ZYFSlideshowHeadViewID];
+        [_collectionView registerClass:[DCCountDownHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:ZYFDCCountDownHeadViewID];
         /** footer **/
         [_collectionView registerClass:[ZYFTopLineFootView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:ZYFTopLineFootViewID];
         
@@ -144,7 +150,7 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 2;
+    return 3;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -152,7 +158,8 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
         //10属性
         return _gridItem.count;
     }
-    if (section == 1) {
+    //广告福利  倒计时  掌上专享
+    if (section == 1 || section == 2) {
         return 1;
     }
     return 0;
@@ -171,6 +178,10 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
         DCNewWelfareCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZYFNewWelfareCellID forIndexPath:indexPath];
         gridcell = cell;
         
+    } else if (indexPath.section == 2){
+        //倒计时
+        ZYFGoodsCountDownCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZYFGoodsCountDownCellID forIndexPath:indexPath];
+        gridcell = cell;
     }
     return gridcell;
 }
@@ -183,6 +194,9 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
             headerView.imageGroupArray = GoodsHomeSilderImagesArray;
             resuableview = headerView;
             
+        } else if (indexPath.section == 2){
+            DCCountDownHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:ZYFDCCountDownHeadViewID forIndexPath:indexPath];
+            resuableview = headerView;
         }
     }
     
@@ -204,7 +218,12 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
         return CGSizeMake(ScreenW/5, ScreenW/5 + DCMargin);
     }
     if (indexPath.section == 1) {
+        //广告
         return CGSizeMake(ScreenW, 180);
+    }
+    if (indexPath.section == 2) {
+        //计时
+        return CGSizeMake(ScreenW, 150);
     }
     return CGSizeZero;
 }
@@ -215,7 +234,9 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
     if (section == 0) {
         return CGSizeMake(ScreenW, 230);//图片滚动的宽高
     }
-    
+    if (section == 2) {
+        return CGSizeMake(ScreenW, 40);
+    }
     return CGSizeZero;
 }
 #pragma mark ---- footer宽高 ----
