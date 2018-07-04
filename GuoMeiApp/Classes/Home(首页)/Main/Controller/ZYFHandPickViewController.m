@@ -16,11 +16,21 @@
 #import "DCNewWelfareCell.h"
 #import "ZYFGoodsCountDownCell.h"
 #import "DCCountDownHeadView.h"
+#import "ZYFExceedApplianceCell.h"
+#import "DCScrollAdFootView.h"
+#import "DCGoodsHandheldCell.h"
+#import "DCYouLikeHeadView.h"    //猜你喜欢等头部标语
+#import "DCGoodsYouLikeCell.h"   //猜你喜欢商品
+#import "ZYFRecommendItem.h"
+#import "DCOverFootView.h"
+#import "ZYFGoodDetailViewController.h"
 @interface ZYFHandPickViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 /** collectionView **/
 @property (nonatomic, strong) UICollectionView *collectionView;
 /** 10个属性 **/
 @property (nonatomic, strong) NSMutableArray<ZYFGridItem *> *gridItem;
+/* 推荐商品属性 */
+@property (strong , nonatomic)NSMutableArray<ZYFRecommendItem *> *youLikeItem;
 /** 顶部工具栏 **/
 @property (nonatomic, strong) ZYFHomeTopToolView *topToolView;
 /** 滚回顶部按钮 **/
@@ -32,11 +42,18 @@
 static NSString *const ZYFGoodsGridCellID = @"ZYFGoodsGridCell";
 static NSString *const ZYFNewWelfareCellID = @"ZYFNewWelfareCell";
 static NSString *const ZYFGoodsCountDownCellID = @"ZYFGoodsCountDownCell";
+static NSString *const ZYFExceedApplianceCellID = @"ZYFExceedApplianceCell";
+static NSString *const DCGoodsHandheldCellID = @"DCGoodsHandheldCell";
+static NSString *const DCGoodsYouLikeCellID = @"DCGoodsYouLikeCell";
+
 /** header **/
 static NSString *const ZYFSlideshowHeadViewID = @"ZYFSlideshowHeadView";
 static NSString *const ZYFDCCountDownHeadViewID = @"DCCountDownHeadView";
+static NSString *const DCYouLikeHeadViewID = @"DCYouLikeHeadView";
 /** footer **/
 static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
+static NSString *const DCOverFootViewID = @"DCOverFootView";
+static NSString *const DCScrollAdFootViewID = @"DCScrollAdFootView";
 #pragma mark ---- lazy ----
 -(UICollectionView *)collectionView
 {
@@ -52,13 +69,18 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
         [_collectionView registerClass:[ZYFGoodsGridCell class] forCellWithReuseIdentifier:ZYFGoodsGridCellID];
         [_collectionView registerClass:[DCNewWelfareCell class] forCellWithReuseIdentifier:ZYFNewWelfareCellID];
         [_collectionView registerClass:[ZYFGoodsCountDownCell class] forCellWithReuseIdentifier:ZYFGoodsCountDownCellID];
+        [_collectionView registerClass:[ZYFExceedApplianceCell class] forCellWithReuseIdentifier:ZYFExceedApplianceCellID];
+        [_collectionView registerClass:[DCGoodsHandheldCell class] forCellWithReuseIdentifier:DCGoodsHandheldCellID];
+        [_collectionView registerClass:[DCGoodsYouLikeCell class] forCellWithReuseIdentifier:DCGoodsYouLikeCellID];
         
         /** header **/
         [_collectionView registerClass:[ZYFSlideshowHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:ZYFSlideshowHeadViewID];
         [_collectionView registerClass:[DCCountDownHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:ZYFDCCountDownHeadViewID];
+        [_collectionView registerClass:[DCYouLikeHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DCYouLikeHeadViewID];
         /** footer **/
         [_collectionView registerClass:[ZYFTopLineFootView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:ZYFTopLineFootViewID];
-        
+        [_collectionView registerClass:[DCScrollAdFootView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:DCScrollAdFootViewID];
+        [_collectionView registerClass:[DCOverFootView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:DCOverFootViewID];
         
         [self.view addSubview:_collectionView];
     }
@@ -89,7 +111,7 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
 - (void)setUpGoodsData
 {
     _gridItem = [ZYFGridItem mj_objectArrayWithFilename:@"GoodsGrid.plist"];
-    //_youLikeItem = [DCRecommendItem mj_objectArrayWithFilename:@"HomeHighGoods.plist"];
+    _youLikeItem = [ZYFRecommendItem mj_objectArrayWithFilename:@"HomeHighGoods.plist"];
 }
 #pragma mark ---- 导航栏处理 ----
 - (void)setUpNavTopView
@@ -150,7 +172,7 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 3;
+    return 6;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -159,8 +181,15 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
         return _gridItem.count;
     }
     //广告福利  倒计时  掌上专享
-    if (section == 1 || section == 2) {
+    if (section == 1 || section == 2 || section == 3) {
         return 1;
+    }
+    if (section == 4) {
+        //推荐
+        return GoodsHandheldImagesArray.count;
+    }
+    if (section == 5) { //猜你喜欢
+        return _youLikeItem.count;
     }
     return 0;
     
@@ -182,6 +211,25 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
         //倒计时
         ZYFGoodsCountDownCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZYFGoodsCountDownCellID forIndexPath:indexPath];
         gridcell = cell;
+    } else if (indexPath.section == 3){
+        //掌上专享
+        ZYFExceedApplianceCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZYFExceedApplianceCellID forIndexPath:indexPath];
+        
+        cell.goodExceedArray = GoodsRecommendArray;
+        gridcell = cell;
+    } else if (indexPath.section == 4){
+        //推荐
+        DCGoodsHandheldCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DCGoodsHandheldCellID forIndexPath:indexPath];
+        NSArray *images = GoodsHandheldImagesArray;
+        cell.handheldImage = images[indexPath.row];
+        gridcell = cell;
+    }else {//猜你喜欢
+        DCGoodsYouLikeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DCGoodsYouLikeCellID forIndexPath:indexPath];
+        cell.lookSameBlock = ^{
+            NSLog(@"点击了第%zd商品的找相似",indexPath.row);
+        };
+        cell.youLikeItem = _youLikeItem[indexPath.row];
+        gridcell = cell;
     }
     return gridcell;
 }
@@ -197,12 +245,26 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
         } else if (indexPath.section == 2){
             DCCountDownHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:ZYFDCCountDownHeadViewID forIndexPath:indexPath];
             resuableview = headerView;
+        }else if (indexPath.section == 4){
+            DCYouLikeHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DCYouLikeHeadViewID forIndexPath:indexPath];
+            [headerView.likeImageView sd_setImageWithURL:[NSURL URLWithString:@"http://gfs7.gomein.net.cn/T1WudvBm_T1RCvBVdK.png"]];
+            resuableview = headerView;
+        }else if (indexPath.section == 5){
+            DCYouLikeHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DCYouLikeHeadViewID forIndexPath:indexPath];
+            [headerView.likeImageView sd_setImageWithURL:[NSURL URLWithString:@"http://gfs5.gomein.net.cn/T16LLvByZj1RCvBVdK.png"]];
+            resuableview = headerView;
         }
     }
     
     if (kind == UICollectionElementKindSectionFooter) {
         if (indexPath.section == 0) {
             ZYFTopLineFootView *footview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:ZYFTopLineFootViewID forIndexPath:indexPath];
+            resuableview = footview;
+        }else if (indexPath.section == 3){
+            DCScrollAdFootView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:DCScrollAdFootViewID forIndexPath:indexPath];
+            resuableview = footerView;
+        }else if (indexPath.section == 5) {
+            DCOverFootView *footview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:DCOverFootViewID forIndexPath:indexPath];
             resuableview = footview;
         }
     }
@@ -225,18 +287,45 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
         //计时
         return CGSizeMake(ScreenW, 150);
     }
+    if (indexPath.section == 3) {
+        //掌上
+        return CGSizeMake(ScreenW,ScreenW * 0.35 + 120);
+    }
+    if (indexPath.section == 4) {
+        //推荐组
+        return [self zyf_layoutAttributesForItemAtIndexPath:indexPath].size;
+    }
+    if (indexPath.section == 5) {//猜你喜欢
+        return CGSizeMake((ScreenW - 4)/2, (ScreenW - 4)/2 + 40);
+    }
     return CGSizeZero;
 }
-
+/** 根据需求返回item的大小尺寸 **/
+- (UICollectionViewLayoutAttributes *)zyf_layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewLayoutAttributes *layoutAttributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+    if (indexPath.section == 4) {
+        if (indexPath.row == 0) {
+            layoutAttributes.size = CGSizeMake(ScreenW, ScreenW * 0.38);
+        }else if (indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 4){
+            layoutAttributes.size = CGSizeMake(ScreenW * 0.5, ScreenW * 0.24);
+        }else{
+            layoutAttributes.size = CGSizeMake(ScreenW * 0.25, ScreenW * 0.35);
+        }
+    }
+    return layoutAttributes;
+}
 #pragma mark ---- header宽高 ----
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
 {
     if (section == 0) {
         return CGSizeMake(ScreenW, 230);//图片滚动的宽高
     }
-    if (section == 2) {
+    if (section == 2 || section == 4 || section == 5) {
+        //猜你喜欢的宽高
         return CGSizeMake(ScreenW, 40);
     }
+    
     return CGSizeZero;
 }
 #pragma mark ---- footer宽高 ----
@@ -245,8 +334,15 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
     if (section == 0) {
         return CGSizeMake(ScreenW, 180);//Top头条宽高
     }
+    if (section == 3) {
+        return CGSizeMake(ScreenW, 80); // 滚动广告
+    }
+    if (section == 5) {
+        return CGSizeMake(ScreenW, 40); // 结束
+    }
     return CGSizeZero;
 }
+
 
 #pragma mark - <UICollectionViewDelegateFlowLayout>
 #pragma mark - X间距
@@ -280,7 +376,19 @@ static NSString *const ZYFTopLineFootViewID = @"ZYFTopLineFootViewID";
 }
 
 
-
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 5) {
+        NSLog(@"点击推荐的第%zd个商品",indexPath.row);
+        ZYFGoodDetailViewController *dcVc = [ZYFGoodDetailViewController new];
+        dcVc.goodTitle = _youLikeItem[indexPath.row].main_title;
+        dcVc.goodPrice = _youLikeItem[indexPath.row].price;
+        dcVc.goodSubtitle = _youLikeItem[indexPath.row].goods_title;
+        dcVc.shufflingArray = _youLikeItem[indexPath.row].images;
+        dcVc.goodImageView = _youLikeItem[indexPath.row].image_url;
+        [self.navigationController pushViewController:dcVc animated:YES];
+    }
+}
 
 
 

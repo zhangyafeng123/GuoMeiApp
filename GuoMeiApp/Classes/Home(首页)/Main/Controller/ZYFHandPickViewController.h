@@ -7,7 +7,7 @@
 //
 
 #import "ZYFBaseSetViewController.h"
-
+#import <UIImageView+WebCache.h>
 @interface ZYFHandPickViewController : ZYFBaseSetViewController
 
 @end
