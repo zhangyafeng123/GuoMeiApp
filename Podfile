@@ -15,8 +15,8 @@ target 'GuoMeiApp' do
  pod 'SDWebImage', '~> 4.3.3'
  pod 'MJRefresh', '~> 3.1.15.3'
  pod 'SDCycleScrollView', '~> 1.75'
-
-
+ pod 'FMDB', '~> 2.7.2'
+ pod 'SVProgressHUD', '~> 2.2.5'
    target 'GuoMeiAppTests' do
     inherit! :search_paths
     # Pods for testing

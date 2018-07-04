@@ -10,6 +10,12 @@
 #import <WebKit/WebKit.h>
 #import "DCDetailGoodReferralCell.h"
 #import "DCDetailShufflingHeadView.h"
+#import "ZYFShowTypeFourCell.h"
+#import "ZYFShowTypeOneCell.h"
+#import "ZYFShowTypeTwoCell.h"
+#import "ZYFShowTypeThreeCell.h"
+#import "ZYFDetailServicetCell.h"
+#import "DCUserInfo.h"
 @interface ZYFGoodBaseViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UIScrollView *scrollerView;
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -17,10 +23,17 @@
 @end
 /** cell **/
 static NSString * const DCDetailGoodReferralCellID = @"DCDetailGoodReferralCell";
+static NSString * const ZYFShowTypeFourCellID = @"ZYFShowTypeFourCell";
+static NSString * const  ZYFShowTypeOneCellID = @"ZYFShowTypeOneCell";
+static NSString * const ZYFShowTypeTwoCellID = @"ZYFShowTypeTwoCell";
+static NSString * const ZYFShowTypeThreeCellID = @"ZYFShowTypeThreeCell";
+static NSString * const ZYFDetailServicetCellID = @"ZYFDetailServicetCell";
+
 /** header **/
 static NSString * const DCDetailShufflingHeadViewID = @"DCDetailShufflingHeadView";
 
-
+static NSString *lastNum_;
+static NSArray *lastSeleArray_;
 
 @implementation ZYFGoodBaseViewController
 - (UIScrollView *)scrollerView
@@ -50,9 +63,16 @@ static NSString * const DCDetailShufflingHeadViewID = @"DCDetailShufflingHeadVie
         
         /** cell **/
         [_collectionView registerClass:[DCDetailGoodReferralCell class] forCellWithReuseIdentifier:DCDetailGoodReferralCellID];
+        [_collectionView registerClass:[ZYFShowTypeFourCell class] forCellWithReuseIdentifier:ZYFShowTypeFourCellID];
+        [_collectionView registerClass:[ZYFShowTypeOneCell class] forCellWithReuseIdentifier:ZYFShowTypeOneCellID];
+        [_collectionView registerClass:[ZYFShowTypeTwoCell class] forCellWithReuseIdentifier:ZYFShowTypeTwoCellID];
+        [_collectionView registerClass:[ZYFShowTypeThreeCell class] forCellWithReuseIdentifier:ZYFShowTypeThreeCellID];
+        [_collectionView registerClass:[ZYFDetailServicetCell class] forCellWithReuseIdentifier:ZYFDetailServicetCellID];
+        
         /** header **/
         [_collectionView registerClass:[DCDetailShufflingHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DCDetailShufflingHeadViewID];
-        
+        /** footer **/
+        [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"UICollectionElementKindSectionFooter"]; //间隔
     }
     return _collectionView;
 }
@@ -82,24 +102,29 @@ static NSString * const DCDetailShufflingHeadViewID = @"DCDetailShufflingHeadVie
     self.collectionView.backgroundColor = self.view.backgroundColor;
     self.scrollerView.backgroundColor = self.view.backgroundColor;
     //初始化
-    
+    lastSeleArray_ = [NSArray array];
+    lastNum_ = 0;
 }
 
 #pragma mark ---- UICollectionViewDataSource ----
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 1;
+    return 6;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 1;
+    if (section == 0 ||section == 2 || section == 3) {
+        return 2;
+    } else {
+        return 1;
+    }
 }
 
 #pragma mark ---- UICollectionViewDelegate ----
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewCell *gridcell = nil;
-    
+    DCUserInfo *userInfo = UserInfoData;
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             DCDetailGoodReferralCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DCDetailGoodReferralCellID forIndexPath:indexPath];
@@ -113,7 +138,44 @@ static NSString * const DCDetailShufflingHeadViewID = @"DCDetailShufflingHeadVie
                 //[weakSelf setUpAlterViewControllerWith:[DCShareToViewController new] WithDistance:300 WithDirection:XWDrawerAnimatorDirectionBottom WithParallaxEnable:NO WithFlipEnable:NO];
             };
             gridcell = cell;
+        } else {
+            ZYFShowTypeFourCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZYFShowTypeFourCellID forIndexPath:indexPath];
+            gridcell = cell;
+            
         }
+    } else if (indexPath.section == 1 || indexPath.section ==2){
+        if (indexPath.section == 1) {
+            ZYFShowTypeOneCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZYFShowTypeOneCellID forIndexPath:indexPath];
+            
+            NSString *result = [NSString stringWithFormat:@"%@ %@件",[lastSeleArray_ componentsJoinedByString:@","],lastNum_];
+            cell.LeftTitleLabel.text = (lastSeleArray_.count == 0) ? @"点击" :@"已选";
+            cell.contentLabel.text = (lastSeleArray_.count == 0) ? @"请选择该商品属性" : result;
+            
+            gridcell = cell;
+        } else {
+            if (indexPath.row == 0) {
+                ZYFShowTypeTwoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZYFShowTypeTwoCellID forIndexPath:indexPath];
+                cell.contentLabel.text = (![[DCObjManager dc_readUserDataForKey:@"isLogin"] isEqualToString:@"1"]) ? @"预送地址" : userInfo.defaultAddress;
+                gridcell = cell;
+            } else {
+                ZYFShowTypeThreeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZYFShowTypeThreeCellID forIndexPath:indexPath];
+                
+                gridcell = cell;
+            }
+        }
+    } else if (indexPath.section == 3){
+        ZYFDetailServicetCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZYFDetailServicetCellID forIndexPath:indexPath];
+        NSArray *btnTitles = @[@"以旧换新",@"可选增值服务"];
+        NSArray *btnImages = @[@"detail_xiangqingye_yijiuhuanxin",@"ptgd_icon_zengzhifuwu"];
+        NSArray *titles = @[@"以旧换新再送好礼",@"为商品保价护航"];
+        [cell.serviceButton setTitle:btnTitles[indexPath.row] forState:(UIControlStateNormal)];
+        [cell.serviceButton setImage:[UIImage imageNamed:btnImages[indexPath.row]] forState:(UIControlStateNormal)];
+        cell.serviceLabel.text = titles[indexPath.row];
+        if (indexPath.row == 0) {//分割线
+            [DCSpeedy dc_setUpLongLineWith:cell WithColor:[[UIColor lightGrayColor]colorWithAlphaComponent:0.4] WithHightRatio:0.6];
+        }
+        gridcell = cell;
+        
     }
     return gridcell;
 }
@@ -126,6 +188,10 @@ static NSString * const DCDetailShufflingHeadViewID = @"DCDetailShufflingHeadVie
             headerView.shufflingArray = _shufflingArray;
             resusalbleview = headerView;
         }
+    } else if (kind == UICollectionElementKindSectionFooter){
+        UICollectionReusableView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"UICollectionElementKindSectionFooter" forIndexPath:indexPath];
+        footerView.backgroundColor = DCBGColor;
+        resusalbleview = footerView;
     }
     return resusalbleview;
 }
@@ -143,6 +209,15 @@ static NSString * const DCDetailShufflingHeadViewID = @"DCDetailShufflingHeadVie
         } else {
             return CGSizeMake(ScreenW, 35);
         }
+    } else if (indexPath.section == 1){
+        //商品属性选择
+        return CGSizeMake(ScreenW, 60);
+    } else if (indexPath.section == 2){
+        //商品快递信息
+        return CGSizeMake(ScreenW, 60);
+    } else if (indexPath.section == 3){
+        //商品保价
+        return CGSizeMake(ScreenW / 2, 60);
     }
     return CGSizeZero;
 }
@@ -156,7 +231,8 @@ static NSString * const DCDetailShufflingHeadViewID = @"DCDetailShufflingHeadVie
 }
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
 {
-    return CGSizeZero;
+    
+    return CGSizeMake(ScreenW, DCMargin);
 }
 
 
