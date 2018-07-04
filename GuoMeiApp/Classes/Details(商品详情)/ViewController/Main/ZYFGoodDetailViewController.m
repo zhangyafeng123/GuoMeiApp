@@ -52,6 +52,8 @@
     [self setUpTopButtonView];
     
     [self addChildViewController];
+    
+    [self setUpBottomButton];
 
 }
 - (void)setUpChildViewControllers
@@ -163,8 +165,75 @@
     offset.x = _scrollerView.dc_width * sender.tag;
     [_scrollerView setContentOffset:offset animated:YES];
 }
-
-
+#pragma mark - 底部按钮(收藏 购物车 加入购物车 立即购买)
+- (void)setUpBottomButton
+{
+    [self setUpLeftTwoButton];//收藏 购物车
+    
+    [self setUpRightTwoButton];//加入购物车 立即购买
+}
+#pragma mark - 收藏 购物车
+- (void)setUpLeftTwoButton
+{
+    NSArray *imagesNor = @[@"tabr_07shoucang_up",@"tabr_08gouwuche"];
+    NSArray *imagesSel = @[@"tabr_07shoucang_down",@"tabr_08gouwuche"];
+    CGFloat buttonW = ScreenW * 0.2;
+    CGFloat buttonH = 50;
+    CGFloat buttonY = ScreenH - buttonH;
+    
+    for (NSInteger i = 0; i < imagesNor.count; i++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        [button setImage:[UIImage imageNamed:imagesNor[i]] forState:UIControlStateNormal];
+        button.backgroundColor = [UIColor whiteColor];
+        [button setImage:[UIImage imageNamed:imagesSel[i]] forState:UIControlStateSelected];
+        button.tag = i;
+        [button addTarget:self action:@selector(bottomButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+        CGFloat buttonX = (buttonW * i);
+        button.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
+        
+        [self.view addSubview:button];
+    }
+}
+#pragma mark - 加入购物车 立即购买
+- (void)setUpRightTwoButton
+{
+    NSArray *titles = @[@"加入购物车",@"立即购买"];
+    CGFloat buttonW = ScreenW * 0.6 * 0.5;
+    CGFloat buttonH = 50;
+    CGFloat buttonY = ScreenH - buttonH;
+    for (NSInteger i = 0; i < titles.count; i++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.titleLabel.font = PFR16Font;
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        button.tag = i + 2;
+        [button setTitle:titles[i] forState:UIControlStateNormal];
+        button.backgroundColor = (i == 0) ? [UIColor redColor] : RGB(249, 125, 10);
+        [button addTarget:self action:@selector(bottomButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+        CGFloat buttonX = ScreenW * 0.4 + (buttonW * i);
+        button.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
+        
+        [self.view addSubview:button];
+    }
+}
+- (void)bottomButtonClick:(UIButton *)button
+{
+    if (button.tag == 0) {
+        NSLog(@"收藏");
+        button.selected = !button.selected;
+    }else if(button.tag == 1){
+        NSLog(@"购物车");
+//        DCMyTrolleyViewController *shopCarVc = [[DCMyTrolleyViewController alloc] init];
+//        shopCarVc.isTabBar = YES;
+//        shopCarVc.title = @"购物车";
+//        [self.navigationController pushViewController:shopCarVc animated:YES];
+    }else  if (button.tag == 2 || button.tag == 3) { //父控制器的加入购物车和立即购买
+        //异步发通知
+        dispatch_sync(dispatch_get_global_queue(0, 0), ^{
+            NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys:[NSString stringWithFormat:@"%zd",button.tag],@"buttonTag", nil];
+            [[NSNotificationCenter defaultCenter]postNotificationName:SELECTCARTORBUY object:nil userInfo:dict];
+        });
+    }
+}
 #pragma mark ---- UIScrollViewDelegate ----
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView

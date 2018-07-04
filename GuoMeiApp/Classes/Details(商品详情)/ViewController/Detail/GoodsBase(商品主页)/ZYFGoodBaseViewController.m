@@ -16,10 +16,19 @@
 #import "ZYFShowTypeThreeCell.h"
 #import "ZYFDetailServicetCell.h"
 #import "DCUserInfo.h"
+#import "ZYFFeatureSelectionViewController.h"
+
+// Categories
+#import "XWDrawerAnimator.h"
+#import "UIViewController+XWTransition.h"
+
 @interface ZYFGoodBaseViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UIScrollView *scrollerView;
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) WKWebView *webView;
+
+/** 通知 **/
+@property(nonatomic, weak) id zyfObj;
 @end
 /** cell **/
 static NSString * const DCDetailGoodReferralCellID = @"DCDetailGoodReferralCell";
@@ -93,7 +102,8 @@ static NSArray *lastSeleArray_;
     [super viewDidLoad];
     
     [self setUpInit];
-
+    
+    [self acceptanceNote];
 }
 #pragma mark ---- init ----
 - (void)setUpInit
@@ -105,7 +115,21 @@ static NSArray *lastSeleArray_;
     lastSeleArray_ = [NSArray array];
     lastNum_ = 0;
 }
-
+#pragma mark ---- 接收通知 ----
+- (void)acceptanceNote
+{
+    WEAKSELF
+    /** 父类加入购物车，立即购买通知 **/
+    _zyfObj = [[NSNotificationCenter defaultCenter] addObserverForName:SELECTCARTORBUY object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+        if (lastSeleArray_.count != 0) {
+            
+        } else {
+            ZYFFeatureSelectionViewController *dcNewFeaVc = [ZYFFeatureSelectionViewController new];
+            dcNewFeaVc.goodImageView = weakSelf.goodImageView;
+            [weakSelf setUpAlterViewControllerWith:dcNewFeaVc WithDistance:ScreenH * 0.8 WithDirection:XWDrawerAnimatorDirectionBottom WithParallaxEnable:YES WithFlipEnable:YES];
+        }
+    }];
+}
 #pragma mark ---- UICollectionViewDataSource ----
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -234,10 +258,26 @@ static NSArray *lastSeleArray_;
     
     return CGSizeMake(ScreenW, DCMargin);
 }
+#pragma mark - 转场动画弹出控制器
+- (void)setUpAlterViewControllerWith:(UIViewController *)vc WithDistance:(CGFloat)distance WithDirection:(XWDrawerAnimatorDirection)vcDirection WithParallaxEnable:(BOOL)parallaxEnable WithFlipEnable:(BOOL)flipEnable
+{
+    [self dismissViewControllerAnimated:YES completion:nil]; //以防有控制未退出
+    XWDrawerAnimatorDirection direction = vcDirection;
+    XWDrawerAnimator *animator = [XWDrawerAnimator xw_animatorWithDirection:direction moveDistance:distance];
+    animator.parallaxEnable = parallaxEnable;
+    animator.flipEnable = flipEnable;
+    [self xw_presentViewController:vc withAnimator:animator];
+    WEAKSELF
+    [animator xw_enableEdgeGestureAndBackTapWithConfig:^{
+        [weakSelf selfAlterViewback];
+    }];
+}
 
-
-
-
+#pragma 退出界面
+- (void)selfAlterViewback
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 

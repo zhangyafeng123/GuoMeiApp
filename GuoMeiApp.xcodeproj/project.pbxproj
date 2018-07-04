@@ -9,6 +9,40 @@
 /* Begin PBXBuildFile section */
 		240448E39987050DA992CB75 /* libPods-GuoMeiAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C44C99426D4A6E7B4ACB19 /* libPods-GuoMeiAppUITests.a */; };
 		8E7DCE3F144FE0D9A4F28C42 /* libPods-GuoMeiAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9087E9F4CC5D309E20BDF1D6 /* libPods-GuoMeiAppTests.a */; };
+		9C1B48A920ECF1730009127F /* ZYFFeatureSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B48A820ECF1730009127F /* ZYFFeatureSelectionViewController.m */; };
+		9C1B495F20ED000C0009127F /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B491720ED000C0009127F /* UIView+Snapshot.m */; };
+		9C1B496020ED000C0009127F /* UINavigationController+XWTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B491820ED000C0009127F /* UINavigationController+XWTransition.m */; };
+		9C1B496120ED000C0009127F /* UIViewController+XWTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B491C20ED000C0009127F /* UIViewController+XWTransition.m */; };
+		9C1B496220ED000C0009127F /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B491F20ED000C0009127F /* SDPhotoBrowser.m */; };
+		9C1B496320ED000C0009127F /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B492020ED000C0009127F /* SDWaitingView.m */; };
+		9C1B496420ED000C0009127F /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B492120ED000C0009127F /* SDBrowserImageView.m */; };
+		9C1B496520ED000C0009127F /* XWFilterAnimator+XWBarSwipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B492820ED000C0009127F /* XWFilterAnimator+XWBarSwipe.m */; };
+		9C1B496620ED000C0009127F /* XWFilterAnimator+XWPageCurl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B492920ED000C0009127F /* XWFilterAnimator+XWPageCurl.m */; };
+		9C1B496720ED000C0009127F /* XWFilterAnimator+XWCopyMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B492D20ED000C0009127F /* XWFilterAnimator+XWCopyMachine.m */; };
+		9C1B496820ED000D0009127F /* XWFilterAnimator+XWRipple.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B493020ED000C0009127F /* XWFilterAnimator+XWRipple.m */; };
+		9C1B496920ED000D0009127F /* XWFilterAnimator+XWFlash.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B493120ED000C0009127F /* XWFilterAnimator+XWFlash.m */; };
+		9C1B496A20ED000D0009127F /* XWFilterAnimator+XWMod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B493220ED000C0009127F /* XWFilterAnimator+XWMod.m */; };
+		9C1B496B20ED000D0009127F /* XWFilterAnimator+XWMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B493320ED000C0009127F /* XWFilterAnimator+XWMask.m */; };
+		9C1B496C20ED000D0009127F /* XWFilterAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B493720ED000C0009127F /* XWFilterAnimator.m */; };
+		9C1B496D20ED000D0009127F /* XWFilterAnimator+XWSwipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B493820ED000C0009127F /* XWFilterAnimator+XWSwipe.m */; };
+		9C1B496E20ED000D0009127F /* XWFilterTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B493A20ED000C0009127F /* XWFilterTransitionView.m */; };
+		9C1B496F20ED000D0009127F /* XWFilterAnimator+XWBoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B493B20ED000C0009127F /* XWFilterAnimator+XWBoxBlur.m */; };
+		9C1B497020ED000D0009127F /* XWCoolAnimator+XWScanning.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B493D20ED000C0009127F /* XWCoolAnimator+XWScanning.m */; };
+		9C1B497120ED000D0009127F /* XWCoolAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B493E20ED000C0009127F /* XWCoolAnimator.m */; };
+		9C1B497220ED000D0009127F /* XWCoolAnimator+XWLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B494120ED000C0009127F /* XWCoolAnimator+XWLines.m */; };
+		9C1B497320ED000D0009127F /* XWCoolAnimator+XWExplode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B494320ED000C0009127F /* XWCoolAnimator+XWExplode.m */; };
+		9C1B497420ED000D0009127F /* XWCoolAnimator+XWFold.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B494620ED000C0009127F /* XWCoolAnimator+XWFold.m */; };
+		9C1B497520ED000D0009127F /* XWCoolAnimator+XWPageFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B494720ED000C0009127F /* XWCoolAnimator+XWPageFlip.m */; };
+		9C1B497620ED000D0009127F /* XWCoolAnimator+XWMiddlePageFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B494920ED000C0009127F /* XWCoolAnimator+XWMiddlePageFlip.m */; };
+		9C1B497720ED000D0009127F /* XWCoolAnimator+XWPortal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B494B20ED000C0009127F /* XWCoolAnimator+XWPortal.m */; };
+		9C1B497820ED000D0009127F /* XWMagicMoveAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B494F20ED000C0009127F /* XWMagicMoveAnimator.m */; };
+		9C1B497920ED000D0009127F /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B495120ED000C0009127F /* line.png */; };
+		9C1B497A20ED000D0009127F /* restrictedshine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B495220ED000C0009127F /* restrictedshine.tiff */; };
+		9C1B497B20ED000D0009127F /* mask.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B495320ED000C0009127F /* mask.jpg */; };
+		9C1B497C20ED000D0009127F /* XWInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B495720ED000C0009127F /* XWInteractiveTransition.m */; };
+		9C1B497D20ED000D0009127F /* XWTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B495820ED000C0009127F /* XWTransitionAnimator.m */; };
+		9C1B497E20ED000D0009127F /* XWCircleSpreadAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B495A20ED000C0009127F /* XWCircleSpreadAnimator.m */; };
+		9C1B497F20ED000D0009127F /* XWDrawerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B495E20ED000C0009127F /* XWDrawerAnimator.m */; };
 		9C424F1D20EA233F0044CD73 /* DCNewWelfareLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C424F1B20EA233E0044CD73 /* DCNewWelfareLayout.m */; };
 		9C424F2220EA23520044CD73 /* DCGoodsHandheldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C424F1E20EA234E0044CD73 /* DCGoodsHandheldCell.m */; };
 		9C424F2320EA23520044CD73 /* DCNewWelfareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C424F2120EA23520044CD73 /* DCNewWelfareCell.m */; };
@@ -131,6 +165,72 @@
 		6A0719B0080CE88AA5BC76AC /* libPods-GuoMeiApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GuoMeiApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9087E9F4CC5D309E20BDF1D6 /* libPods-GuoMeiAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GuoMeiAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E45C963CE87DB776A20217 /* Pods-GuoMeiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuoMeiApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuoMeiApp/Pods-GuoMeiApp.release.xcconfig"; sourceTree = "<group>"; };
+		9C1B48A720ECF1730009127F /* ZYFFeatureSelectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYFFeatureSelectionViewController.h; sourceTree = "<group>"; };
+		9C1B48A820ECF1730009127F /* ZYFFeatureSelectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFFeatureSelectionViewController.m; sourceTree = "<group>"; };
+		9C1B491720ED000C0009127F /* UIView+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Snapshot.m"; sourceTree = "<group>"; };
+		9C1B491820ED000C0009127F /* UINavigationController+XWTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+XWTransition.m"; sourceTree = "<group>"; };
+		9C1B491920ED000C0009127F /* UIViewController+XWTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XWTransition.h"; sourceTree = "<group>"; };
+		9C1B491A20ED000C0009127F /* UIView+Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Snapshot.h"; sourceTree = "<group>"; };
+		9C1B491B20ED000C0009127F /* UINavigationController+XWTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+XWTransition.h"; sourceTree = "<group>"; };
+		9C1B491C20ED000C0009127F /* UIViewController+XWTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XWTransition.m"; sourceTree = "<group>"; };
+		9C1B491E20ED000C0009127F /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		9C1B491F20ED000C0009127F /* SDPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoBrowser.m; sourceTree = "<group>"; };
+		9C1B492020ED000C0009127F /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
+		9C1B492120ED000C0009127F /* SDBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBrowserImageView.m; sourceTree = "<group>"; };
+		9C1B492220ED000C0009127F /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
+		9C1B492320ED000C0009127F /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
+		9C1B492420ED000C0009127F /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
+		9C1B492620ED000C0009127F /* XWFilterAnimator+XWMod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWMod.h"; sourceTree = "<group>"; };
+		9C1B492720ED000C0009127F /* XWFilterAnimator+XWFlash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWFlash.h"; sourceTree = "<group>"; };
+		9C1B492820ED000C0009127F /* XWFilterAnimator+XWBarSwipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWBarSwipe.m"; sourceTree = "<group>"; };
+		9C1B492920ED000C0009127F /* XWFilterAnimator+XWPageCurl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWPageCurl.m"; sourceTree = "<group>"; };
+		9C1B492A20ED000C0009127F /* XWFilterAnimator+XWMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWMask.h"; sourceTree = "<group>"; };
+		9C1B492B20ED000C0009127F /* XWFilterAnimator+XWSwipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWSwipe.h"; sourceTree = "<group>"; };
+		9C1B492C20ED000C0009127F /* XWFilterAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWFilterAnimator.h; sourceTree = "<group>"; };
+		9C1B492D20ED000C0009127F /* XWFilterAnimator+XWCopyMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWCopyMachine.m"; sourceTree = "<group>"; };
+		9C1B492E20ED000C0009127F /* XWFilterAnimator+XWBoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWBoxBlur.h"; sourceTree = "<group>"; };
+		9C1B492F20ED000C0009127F /* XWFilterTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWFilterTransitionView.h; sourceTree = "<group>"; };
+		9C1B493020ED000C0009127F /* XWFilterAnimator+XWRipple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWRipple.m"; sourceTree = "<group>"; };
+		9C1B493120ED000C0009127F /* XWFilterAnimator+XWFlash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWFlash.m"; sourceTree = "<group>"; };
+		9C1B493220ED000C0009127F /* XWFilterAnimator+XWMod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWMod.m"; sourceTree = "<group>"; };
+		9C1B493320ED000C0009127F /* XWFilterAnimator+XWMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWMask.m"; sourceTree = "<group>"; };
+		9C1B493420ED000C0009127F /* XWFilterAnimator+XWPageCurl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWPageCurl.h"; sourceTree = "<group>"; };
+		9C1B493520ED000C0009127F /* XWFilterAnimator+XWBarSwipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWBarSwipe.h"; sourceTree = "<group>"; };
+		9C1B493620ED000C0009127F /* XWFilterAnimator+XWCopyMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWCopyMachine.h"; sourceTree = "<group>"; };
+		9C1B493720ED000C0009127F /* XWFilterAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWFilterAnimator.m; sourceTree = "<group>"; };
+		9C1B493820ED000C0009127F /* XWFilterAnimator+XWSwipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWSwipe.m"; sourceTree = "<group>"; };
+		9C1B493920ED000C0009127F /* XWFilterAnimator+XWRipple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWFilterAnimator+XWRipple.h"; sourceTree = "<group>"; };
+		9C1B493A20ED000C0009127F /* XWFilterTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWFilterTransitionView.m; sourceTree = "<group>"; };
+		9C1B493B20ED000C0009127F /* XWFilterAnimator+XWBoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWFilterAnimator+XWBoxBlur.m"; sourceTree = "<group>"; };
+		9C1B493D20ED000C0009127F /* XWCoolAnimator+XWScanning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWScanning.m"; sourceTree = "<group>"; };
+		9C1B493E20ED000C0009127F /* XWCoolAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCoolAnimator.m; sourceTree = "<group>"; };
+		9C1B493F20ED000C0009127F /* XWCoolAnimator+XWPageFlip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWPageFlip.h"; sourceTree = "<group>"; };
+		9C1B494020ED000C0009127F /* XWCoolAnimator+XWFold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWFold.h"; sourceTree = "<group>"; };
+		9C1B494120ED000C0009127F /* XWCoolAnimator+XWLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWLines.m"; sourceTree = "<group>"; };
+		9C1B494220ED000C0009127F /* XWCoolAnimator+XWMiddlePageFlip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWMiddlePageFlip.h"; sourceTree = "<group>"; };
+		9C1B494320ED000C0009127F /* XWCoolAnimator+XWExplode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWExplode.m"; sourceTree = "<group>"; };
+		9C1B494420ED000C0009127F /* XWCoolAnimator+XWPortal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWPortal.h"; sourceTree = "<group>"; };
+		9C1B494520ED000C0009127F /* XWCoolAnimator+XWScanning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWScanning.h"; sourceTree = "<group>"; };
+		9C1B494620ED000C0009127F /* XWCoolAnimator+XWFold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWFold.m"; sourceTree = "<group>"; };
+		9C1B494720ED000C0009127F /* XWCoolAnimator+XWPageFlip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWPageFlip.m"; sourceTree = "<group>"; };
+		9C1B494820ED000C0009127F /* XWCoolAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCoolAnimator.h; sourceTree = "<group>"; };
+		9C1B494920ED000C0009127F /* XWCoolAnimator+XWMiddlePageFlip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWMiddlePageFlip.m"; sourceTree = "<group>"; };
+		9C1B494A20ED000C0009127F /* XWCoolAnimator+XWLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWLines.h"; sourceTree = "<group>"; };
+		9C1B494B20ED000C0009127F /* XWCoolAnimator+XWPortal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XWCoolAnimator+XWPortal.m"; sourceTree = "<group>"; };
+		9C1B494C20ED000C0009127F /* XWCoolAnimator+XWExplode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XWCoolAnimator+XWExplode.h"; sourceTree = "<group>"; };
+		9C1B494E20ED000C0009127F /* XWMagicMoveAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWMagicMoveAnimator.h; sourceTree = "<group>"; };
+		9C1B494F20ED000C0009127F /* XWMagicMoveAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWMagicMoveAnimator.m; sourceTree = "<group>"; };
+		9C1B495120ED000C0009127F /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		9C1B495220ED000C0009127F /* restrictedshine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = restrictedshine.tiff; sourceTree = "<group>"; };
+		9C1B495320ED000C0009127F /* mask.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mask.jpg; sourceTree = "<group>"; };
+		9C1B495520ED000C0009127F /* XWInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWInteractiveTransition.h; sourceTree = "<group>"; };
+		9C1B495620ED000C0009127F /* XWTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWTransitionAnimator.h; sourceTree = "<group>"; };
+		9C1B495720ED000C0009127F /* XWInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWInteractiveTransition.m; sourceTree = "<group>"; };
+		9C1B495820ED000C0009127F /* XWTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWTransitionAnimator.m; sourceTree = "<group>"; };
+		9C1B495A20ED000C0009127F /* XWCircleSpreadAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCircleSpreadAnimator.m; sourceTree = "<group>"; };
+		9C1B495B20ED000C0009127F /* XWCircleSpreadAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCircleSpreadAnimator.h; sourceTree = "<group>"; };
+		9C1B495D20ED000C0009127F /* XWDrawerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDrawerAnimator.h; sourceTree = "<group>"; };
+		9C1B495E20ED000C0009127F /* XWDrawerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDrawerAnimator.m; sourceTree = "<group>"; };
 		9C424F1B20EA233E0044CD73 /* DCNewWelfareLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCNewWelfareLayout.m; sourceTree = "<group>"; };
 		9C424F1C20EA233F0044CD73 /* DCNewWelfareLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCNewWelfareLayout.h; sourceTree = "<group>"; };
 		9C424F1E20EA234E0044CD73 /* DCGoodsHandheldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCGoodsHandheldCell.m; sourceTree = "<group>"; };
@@ -345,6 +445,150 @@
 				A7C44C99426D4A6E7B4ACB19 /* libPods-GuoMeiAppUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C1B491520ED000C0009127F /* XWTransition */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B491620ED000C0009127F /* Category */,
+				9C1B491D20ED000C0009127F /* SDPhotoBrowser */,
+				9C1B492520ED000C0009127F /* XWFilterAnimator */,
+				9C1B493C20ED000C0009127F /* XWCoolAnimator */,
+				9C1B494D20ED000C0009127F /* XWMagicMoveAnimator */,
+				9C1B495020ED000C0009127F /* Resoures */,
+				9C1B495420ED000C0009127F /* Main */,
+				9C1B495920ED000C0009127F /* XWCircleSpreadAnimator */,
+				9C1B495C20ED000C0009127F /* XWDrawerAnimator */,
+			);
+			name = XWTransition;
+			path = ../../../../../XWTransition;
+			sourceTree = "<group>";
+		};
+		9C1B491620ED000C0009127F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B491720ED000C0009127F /* UIView+Snapshot.m */,
+				9C1B491820ED000C0009127F /* UINavigationController+XWTransition.m */,
+				9C1B491920ED000C0009127F /* UIViewController+XWTransition.h */,
+				9C1B491A20ED000C0009127F /* UIView+Snapshot.h */,
+				9C1B491B20ED000C0009127F /* UINavigationController+XWTransition.h */,
+				9C1B491C20ED000C0009127F /* UIViewController+XWTransition.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9C1B491D20ED000C0009127F /* SDPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B491E20ED000C0009127F /* SDPhotoBrowserConfig.h */,
+				9C1B491F20ED000C0009127F /* SDPhotoBrowser.m */,
+				9C1B492020ED000C0009127F /* SDWaitingView.m */,
+				9C1B492120ED000C0009127F /* SDBrowserImageView.m */,
+				9C1B492220ED000C0009127F /* SDWaitingView.h */,
+				9C1B492320ED000C0009127F /* SDPhotoBrowser.h */,
+				9C1B492420ED000C0009127F /* SDBrowserImageView.h */,
+			);
+			path = SDPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		9C1B492520ED000C0009127F /* XWFilterAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B492620ED000C0009127F /* XWFilterAnimator+XWMod.h */,
+				9C1B492720ED000C0009127F /* XWFilterAnimator+XWFlash.h */,
+				9C1B492820ED000C0009127F /* XWFilterAnimator+XWBarSwipe.m */,
+				9C1B492920ED000C0009127F /* XWFilterAnimator+XWPageCurl.m */,
+				9C1B492A20ED000C0009127F /* XWFilterAnimator+XWMask.h */,
+				9C1B492B20ED000C0009127F /* XWFilterAnimator+XWSwipe.h */,
+				9C1B492C20ED000C0009127F /* XWFilterAnimator.h */,
+				9C1B492D20ED000C0009127F /* XWFilterAnimator+XWCopyMachine.m */,
+				9C1B492E20ED000C0009127F /* XWFilterAnimator+XWBoxBlur.h */,
+				9C1B492F20ED000C0009127F /* XWFilterTransitionView.h */,
+				9C1B493020ED000C0009127F /* XWFilterAnimator+XWRipple.m */,
+				9C1B493120ED000C0009127F /* XWFilterAnimator+XWFlash.m */,
+				9C1B493220ED000C0009127F /* XWFilterAnimator+XWMod.m */,
+				9C1B493320ED000C0009127F /* XWFilterAnimator+XWMask.m */,
+				9C1B493420ED000C0009127F /* XWFilterAnimator+XWPageCurl.h */,
+				9C1B493520ED000C0009127F /* XWFilterAnimator+XWBarSwipe.h */,
+				9C1B493620ED000C0009127F /* XWFilterAnimator+XWCopyMachine.h */,
+				9C1B493720ED000C0009127F /* XWFilterAnimator.m */,
+				9C1B493820ED000C0009127F /* XWFilterAnimator+XWSwipe.m */,
+				9C1B493920ED000C0009127F /* XWFilterAnimator+XWRipple.h */,
+				9C1B493A20ED000C0009127F /* XWFilterTransitionView.m */,
+				9C1B493B20ED000C0009127F /* XWFilterAnimator+XWBoxBlur.m */,
+			);
+			path = XWFilterAnimator;
+			sourceTree = "<group>";
+		};
+		9C1B493C20ED000C0009127F /* XWCoolAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B493D20ED000C0009127F /* XWCoolAnimator+XWScanning.m */,
+				9C1B493E20ED000C0009127F /* XWCoolAnimator.m */,
+				9C1B493F20ED000C0009127F /* XWCoolAnimator+XWPageFlip.h */,
+				9C1B494020ED000C0009127F /* XWCoolAnimator+XWFold.h */,
+				9C1B494120ED000C0009127F /* XWCoolAnimator+XWLines.m */,
+				9C1B494220ED000C0009127F /* XWCoolAnimator+XWMiddlePageFlip.h */,
+				9C1B494320ED000C0009127F /* XWCoolAnimator+XWExplode.m */,
+				9C1B494420ED000C0009127F /* XWCoolAnimator+XWPortal.h */,
+				9C1B494520ED000C0009127F /* XWCoolAnimator+XWScanning.h */,
+				9C1B494620ED000C0009127F /* XWCoolAnimator+XWFold.m */,
+				9C1B494720ED000C0009127F /* XWCoolAnimator+XWPageFlip.m */,
+				9C1B494820ED000C0009127F /* XWCoolAnimator.h */,
+				9C1B494920ED000C0009127F /* XWCoolAnimator+XWMiddlePageFlip.m */,
+				9C1B494A20ED000C0009127F /* XWCoolAnimator+XWLines.h */,
+				9C1B494B20ED000C0009127F /* XWCoolAnimator+XWPortal.m */,
+				9C1B494C20ED000C0009127F /* XWCoolAnimator+XWExplode.h */,
+			);
+			path = XWCoolAnimator;
+			sourceTree = "<group>";
+		};
+		9C1B494D20ED000C0009127F /* XWMagicMoveAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B494E20ED000C0009127F /* XWMagicMoveAnimator.h */,
+				9C1B494F20ED000C0009127F /* XWMagicMoveAnimator.m */,
+			);
+			path = XWMagicMoveAnimator;
+			sourceTree = "<group>";
+		};
+		9C1B495020ED000C0009127F /* Resoures */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B495120ED000C0009127F /* line.png */,
+				9C1B495220ED000C0009127F /* restrictedshine.tiff */,
+				9C1B495320ED000C0009127F /* mask.jpg */,
+			);
+			path = Resoures;
+			sourceTree = "<group>";
+		};
+		9C1B495420ED000C0009127F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B495520ED000C0009127F /* XWInteractiveTransition.h */,
+				9C1B495620ED000C0009127F /* XWTransitionAnimator.h */,
+				9C1B495720ED000C0009127F /* XWInteractiveTransition.m */,
+				9C1B495820ED000C0009127F /* XWTransitionAnimator.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9C1B495920ED000C0009127F /* XWCircleSpreadAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B495A20ED000C0009127F /* XWCircleSpreadAnimator.m */,
+				9C1B495B20ED000C0009127F /* XWCircleSpreadAnimator.h */,
+			);
+			path = XWCircleSpreadAnimator;
+			sourceTree = "<group>";
+		};
+		9C1B495C20ED000C0009127F /* XWDrawerAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B495D20ED000C0009127F /* XWDrawerAnimator.h */,
+				9C1B495E20ED000C0009127F /* XWDrawerAnimator.m */,
+			);
+			path = XWDrawerAnimator;
 			sourceTree = "<group>";
 		};
 		9C60E2BA20EBB23A00062F42 /* CollectionView */ = {
@@ -593,6 +837,7 @@
 		9CA2E4D420E75B3500AE25C7 /* Vendors(第三方) */ = {
 			isa = PBXGroup;
 			children = (
+				9C1B491520ED000C0009127F /* XWTransition */,
 				9C60E2DF20EC9A9200062F42 /* DBModel */,
 				9C6E8D6620E9C8A6001822A1 /* CDDTitleRolling */,
 			);
@@ -839,6 +1084,8 @@
 			children = (
 				9C60E2AE20EB6EC200062F42 /* ZYFGoodBaseViewController.h */,
 				9C60E2AF20EB6EC200062F42 /* ZYFGoodBaseViewController.m */,
+				9C1B48A720ECF1730009127F /* ZYFFeatureSelectionViewController.h */,
+				9C1B48A820ECF1730009127F /* ZYFFeatureSelectionViewController.m */,
 			);
 			path = "GoodsBase(商品主页)";
 			sourceTree = "<group>";
@@ -1444,9 +1691,11 @@
 				9CA2E63620E8E49A00AE25C7 /* MessageNote.plist in Resources */,
 				9CA2E62C20E8E49A00AE25C7 /* ShopItem.plist in Resources */,
 				9CA2E63120E8E49A00AE25C7 /* CommentPic.plist in Resources */,
+				9C1B497920ED000D0009127F /* line.png in Resources */,
 				9CA2E62420E8E49A00AE25C7 /* shareTerrace.plist in Resources */,
 				9CA2E63C20E8E49A00AE25C7 /* loading.gif in Resources */,
 				9CEF707320E38EB5002192BA /* LaunchScreen.storyboard in Resources */,
+				9C1B497B20ED000D0009127F /* mask.jpg in Resources */,
 				9CA2E63020E8E49A00AE25C7 /* YouLikeGoods.plist in Resources */,
 				9CA2E63820E8E49A00AE25C7 /* GoodsGrid.plist in Resources */,
 				9CA2E62E20E8E49A00AE25C7 /* BeautyShop.plist in Resources */,
@@ -1455,6 +1704,7 @@
 				9CA2E62D20E8E49A00AE25C7 /* FiltrateItem.plist in Resources */,
 				9CA2E62620E8E49A00AE25C7 /* DetailRecommend.plist in Resources */,
 				9CA2E62520E8E49A00AE25C7 /* ClassifyTitles.plist in Resources */,
+				9C1B497A20ED000D0009127F /* restrictedshine.tiff in Resources */,
 				9CA2E62B20E8E49A00AE25C7 /* FootprintGoods.plist in Resources */,
 				9CA2E63D20E8E49A00AE25C7 /* loading2.gif in Resources */,
 				9CA2E63220E8E49A00AE25C7 /* MyCenterFlow.plist in Resources */,
@@ -1566,6 +1816,9 @@
 				9C60E2B920EB890D00062F42 /* ZYFParticularsShowViewController.m in Sources */,
 				9C60E2E520EC9AA800062F42 /* JKDBModel.m in Sources */,
 				9C60E2F020EC9E3500062F42 /* ZYFShowTypeThreeCell.m in Sources */,
+				9C1B497720ED000D0009127F /* XWCoolAnimator+XWPortal.m in Sources */,
+				9C1B496420ED000C0009127F /* SDBrowserImageView.m in Sources */,
+				9C1B496A20ED000D0009127F /* XWFilterAnimator+XWMod.m in Sources */,
 				9C60E2AA20EB583100062F42 /* DCGoodsYouLikeCell.m in Sources */,
 				9C60E2B620EB742E00062F42 /* ZYFGoodCommentViewController.m in Sources */,
 				9CA2E64220E8E75100AE25C7 /* ZYFHomeTopToolView.m in Sources */,
@@ -1574,6 +1827,7 @@
 				9CA2E55320E7E49500AE25C7 /* ZYFFeatureCell.m in Sources */,
 				9CA2E5B920E89CE500AE25C7 /* ZYFTabBadgeView.m in Sources */,
 				9C60E2DB20EC749800062F42 /* ZYFShowTypeOneCell.m in Sources */,
+				9C1B496E20ED000D0009127F /* XWFilterTransitionView.m in Sources */,
 				9CEF70AC20E39181002192BA /* ZYFBeautyMessageViewController.m in Sources */,
 				9CA2E55020E7E48000AE25C7 /* ZYFFeatureViewController.m in Sources */,
 				9CA2E5CA20E8AA0C00AE25C7 /* ZYFMyCenterViewController.m in Sources */,
@@ -1583,25 +1837,44 @@
 				9C60E29220EB27C600062F42 /* ZYFRecommendItem.m in Sources */,
 				9C60E2ED20EC9D5500062F42 /* DCUserInfo.m in Sources */,
 				9CA2E4E220E77B9B00AE25C7 /* ZYFTabBarController.m in Sources */,
+				9C1B497E20ED000D0009127F /* XWCircleSpreadAnimator.m in Sources */,
 				9C60E2CF20EBB3C300062F42 /* DCUpDownButton.m in Sources */,
 				9C60E2C920EBB34400062F42 /* DCDetailShufflingHeadView.m in Sources */,
 				9CA2E4DB20E75C3C00AE25C7 /* DCConsts.m in Sources */,
 				9CA2E60020E8DE9000AE25C7 /* ZYFSlideshowHeadView.m in Sources */,
+				9C1B497020ED000D0009127F /* XWCoolAnimator+XWScanning.m in Sources */,
+				9C1B496C20ED000D0009127F /* XWFilterAnimator.m in Sources */,
+				9C1B496F20ED000D0009127F /* XWFilterAnimator+XWBoxBlur.m in Sources */,
 				9C60E29E20EB47F700062F42 /* ZYFExceedApplianceCell.m in Sources */,
 				9C60E2DE20EC956700062F42 /* ZYFShowTypeTwoCell.m in Sources */,
+				9C1B497D20ED000D0009127F /* XWTransitionAnimator.m in Sources */,
 				9C60E29820EB405800062F42 /* DCCountDownHeadView.m in Sources */,
+				9C1B496920ED000D0009127F /* XWFilterAnimator+XWFlash.m in Sources */,
 				9CA2E59520E7F2C300AE25C7 /* ZYFLoginViewController.m in Sources */,
 				9CA2E59920E7F2D900AE25C7 /* ZYFRegisteredViewController.m in Sources */,
 				9C6E8D6520E9C74D001822A1 /* ZYFTopLineFootView.m in Sources */,
+				9C1B496820ED000D0009127F /* XWFilterAnimator+XWRipple.m in Sources */,
+				9C1B496D20ED000D0009127F /* XWFilterAnimator+XWSwipe.m in Sources */,
 				9C60E2A120EB4BDE00062F42 /* DCScrollAdFootView.m in Sources */,
+				9C1B497C20ED000D0009127F /* XWInteractiveTransition.m in Sources */,
+				9C1B496220ED000C0009127F /* SDPhotoBrowser.m in Sources */,
 				9CA2E5AD20E898D900AE25C7 /* ZYFGoodDetailViewController.m in Sources */,
 				9C6E8D6B20E9C8B8001822A1 /* UIView+DCRolling.m in Sources */,
+				9C1B497420ED000D0009127F /* XWCoolAnimator+XWFold.m in Sources */,
 				9CA2E5BF20E8A8B700AE25C7 /* ZYFHandPickViewController.m in Sources */,
 				9CA2E5F220E8C8F400AE25C7 /* ZYFGridItem.m in Sources */,
 				9CA2E5FA20E8CAFC00AE25C7 /* ZYFGoodsGridCell.m in Sources */,
+				9C1B497520ED000D0009127F /* XWCoolAnimator+XWPageFlip.m in Sources */,
+				9C1B496020ED000C0009127F /* UINavigationController+XWTransition.m in Sources */,
+				9C1B496720ED000C0009127F /* XWFilterAnimator+XWCopyMachine.m in Sources */,
+				9C1B495F20ED000C0009127F /* UIView+Snapshot.m in Sources */,
 				9CEF707620E38EB5002192BA /* main.m in Sources */,
 				9CA2E58C20E7F0E700AE25C7 /* ZYFBaseSetViewController.m in Sources */,
+				9C1B497320ED000D0009127F /* XWCoolAnimator+XWExplode.m in Sources */,
+				9C1B496120ED000C0009127F /* UIViewController+XWTransition.m in Sources */,
+				9C1B497F20ED000D0009127F /* XWDrawerAnimator.m in Sources */,
 				9C60E2E420EC9AA800062F42 /* JKDBHelper.m in Sources */,
+				9C1B48A920ECF1730009127F /* ZYFFeatureSelectionViewController.m in Sources */,
 				9C424F2220EA23520044CD73 /* DCGoodsHandheldCell.m in Sources */,
 				9C60E2CC20EBB36200062F42 /* DCDetailGoodReferralCell.m in Sources */,
 				9CA2E4DF20E7755700AE25C7 /* ZYFAppVersionTool.m in Sources */,
@@ -1609,14 +1882,21 @@
 				9C60E2A720EB577600062F42 /* DCLIRLButton.m in Sources */,
 				9C60E29B20EB40BE00062F42 /* ZYFZuoWenRightButton.m in Sources */,
 				9CA2E5A520E8986A00AE25C7 /* ZYFMediaListViewController.m in Sources */,
+				9C1B496620ED000C0009127F /* XWFilterAnimator+XWPageCurl.m in Sources */,
+				9C1B497120ED000D0009127F /* XWCoolAnimator.m in Sources */,
 				9CA2E4DC20E75C3C00AE25C7 /* DCNotificationCenterName.m in Sources */,
+				9C1B497620ED000D0009127F /* XWCoolAnimator+XWMiddlePageFlip.m in Sources */,
 				9C60E2A420EB564D00062F42 /* DCYouLikeHeadView.m in Sources */,
 				9C60E2F320ECA50300062F42 /* ZYFDetailServicetCell.m in Sources */,
+				9C1B497220ED000D0009127F /* XWCoolAnimator+XWLines.m in Sources */,
 				9C6E8D6220E9BF40001822A1 /* ZYFHomeRefreshGifHeader.m in Sources */,
 				9C6E8D6C20E9C8B8001822A1 /* DCTitleRolling.m in Sources */,
 				9CA2E57B20E7EDF100AE25C7 /* UIView+DCExtension.m in Sources */,
+				9C1B497820ED000D0009127F /* XWMagicMoveAnimator.m in Sources */,
+				9C1B496520ED000C0009127F /* XWFilterAnimator+XWBarSwipe.m in Sources */,
 				9CEF70A920E38FC7002192BA /* AppDelegate.m in Sources */,
 				9CA2E5B620E8995500AE25C7 /* ZYFCommodityViewController.m in Sources */,
+				9C1B496B20ED000D0009127F /* XWFilterAnimator+XWMask.m in Sources */,
 				9C60E2AD20EB5A2E00062F42 /* DCOverFootView.m in Sources */,
 				9C60E29520EB39C100062F42 /* DCGoodsSurplusCell.m in Sources */,
 				9CA2E5A820E8989500AE25C7 /* ZYFBeautyShopViewController.m in Sources */,
@@ -1625,6 +1905,7 @@
 				9CA2E4CD20E75A0800AE25C7 /* ZYFNavigationController.m in Sources */,
 				9CA2E5BC20E8A04300AE25C7 /* DCSpeedy.m in Sources */,
 				9C60E2B320EB73EC00062F42 /* ZYFGoodParticularsViewController.m in Sources */,
+				9C1B496320ED000C0009127F /* SDWaitingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
