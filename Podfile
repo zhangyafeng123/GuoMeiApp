@@ -17,6 +17,7 @@ target 'GuoMeiApp' do
  pod 'SDCycleScrollView', '~> 1.75'
  pod 'FMDB', '~> 2.7.2'
  pod 'SVProgressHUD', '~> 2.2.5'
+ pod 'PPNumberButton', '~> 0.8.0'
    target 'GuoMeiAppTests' do
     inherit! :search_paths
     # Pods for testing

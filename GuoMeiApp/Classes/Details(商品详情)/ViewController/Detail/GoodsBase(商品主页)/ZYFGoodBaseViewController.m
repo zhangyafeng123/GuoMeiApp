@@ -17,10 +17,12 @@
 #import "ZYFDetailServicetCell.h"
 #import "DCUserInfo.h"
 #import "ZYFFeatureSelectionViewController.h"
-
+#import <SVProgressHUD.h>
 // Categories
 #import "XWDrawerAnimator.h"
 #import "UIViewController+XWTransition.h"
+
+#import "DCFillinOrderViewController.h"
 
 @interface ZYFGoodBaseViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UIScrollView *scrollerView;
@@ -122,13 +124,52 @@ static NSArray *lastSeleArray_;
     /** 父类加入购物车，立即购买通知 **/
     _zyfObj = [[NSNotificationCenter defaultCenter] addObserverForName:SELECTCARTORBUY object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
         if (lastSeleArray_.count != 0) {
-            
+            if ([note.userInfo[@"buttonTag"] isEqualToString:@"2"]) { //加入购物车（父类）
+                
+                [weakSelf setUpWithAddSuccess];
+                
+            }else if ([note.userInfo[@"buttonTag"] isEqualToString:@"3"]){//立即购买（父类）
+                
+                DCFillinOrderViewController *dcFillVc = [DCFillinOrderViewController new];
+                [weakSelf.navigationController pushViewController:dcFillVc animated:YES];
+            }
         } else {
             ZYFFeatureSelectionViewController *dcNewFeaVc = [ZYFFeatureSelectionViewController new];
             dcNewFeaVc.goodImageView = weakSelf.goodImageView;
             [weakSelf setUpAlterViewControllerWith:dcNewFeaVc WithDistance:ScreenH * 0.8 WithDirection:XWDrawerAnimatorDirectionBottom WithParallaxEnable:YES WithFlipEnable:YES];
         }
     }];
+    
+    //选择Item通知
+    _zyfObj = [[NSNotificationCenter defaultCenter]addObserverForName:SHOPITEMSELECTBACK object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+        
+        NSArray *selectArray = note.userInfo[@"Array"];
+        NSString *num = note.userInfo[@"Num"];
+        NSString *buttonTag = note.userInfo[@"Tag"];
+        
+        lastNum_ = num;
+        lastSeleArray_ = selectArray;
+        
+        [weakSelf.collectionView reloadData];
+        
+        if ([buttonTag isEqualToString:@"0"]) { //加入购物车
+            
+            [weakSelf setUpWithAddSuccess];
+            
+        }else if ([buttonTag isEqualToString:@"1"]) { //立即购买
+            
+            DCFillinOrderViewController *dcFillVc = [DCFillinOrderViewController new];
+            [weakSelf.navigationController pushViewController:dcFillVc animated:YES];
+        }
+        
+    }];
+}
+#pragma mark - 加入购物车成功
+- (void)setUpWithAddSuccess
+{
+    [SVProgressHUD showSuccessWithStatus:@"加入购物车成功~"];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD dismissWithDelay:1.0];
 }
 #pragma mark ---- UICollectionViewDataSource ----
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
